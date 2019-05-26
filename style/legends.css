@@ -1,0 +1,11 @@
+﻿body {
+	margin: 5% 10%;
+	background-color: #222222;
+	background-image: url("/style/black-paper.png");
+	color: #eeeeee;
+
+}
+a {
+	color: #eeeeee;
+	text-decoration: none;
+}

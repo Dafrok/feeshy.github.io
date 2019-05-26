@@ -1,0 +1,10 @@
+﻿body {
+	margin: 5% 10%;
+	background-color: #eef7f2;
+	background-image: url("light-paper-fibers.png");
+	color: #222222;
+}
+a {
+	color: #222222;
+	text-decoration: none;
+}

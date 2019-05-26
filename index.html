@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+<meta charset=utf-8/>
+<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+<link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
+<link rel="manifest" href="/resources/site.webmanifest">
+<link rel="mask-icon" href="/resources/safari-pinned-tab.svg" color="#403f5f">
+<link rel="shortcut icon" href="/resources/favicon.ico">
+<meta name="msapplication-TileColor" content="#403f5f">
+<meta name="msapplication-config" content="/resources/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<title>浮鲜</title>
+<link rel="stylesheet" type="text/css" href="style/home.css" />
+<script src="style/typekit.js"></script>
+<link rel="stylesheet" type="text/css" href="style/fonts.css" />
+<style type="text/css">
+.auto-style1 {
+	font-family: source-han-sans-cjk-sc, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="title">
+
+<h1>CONTENTS</h1>
+<br />
+<p><a href="ambient/index.html">§ Ambient §</a></p>
+<p><a href="poetry/index.html">§ 诗 §</a></p>
+<p><a href="prose/index.html">§ 随笔 §</a></p>
+<p><a href="legends/index.html">§ 都市传奇 §</a></p>
+<p><a href="douban/index.html">§ 影评 §</a></p>
+<p><a href="http://feeshy.lofter.com" target="_blank">§ 摄影 §</a></p>
+<p><a href="tech/index.html">§ Tech &amp; DIY §</a></p>
+
+</div>
+
+<div class="ui" >
+
+<img id="mp_qr" src="resources/mp_qr.png" alt="QR Code" width="128px" height="128px" style="visibility: hidden;">
+<p><a href="https://t.me/feeshy_updates" target="_blank">Telegram</a> | 
+<a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">订阅号</a> | 
+<a href="search.html">搜索</a>
+</p>
+
+<script>
+function qr_event(){
+	var qr=document.getElementById("mp_qr").style.cssText;
+	if (qr=="visibility: hidden;") {
+		qr="visibility: visible; position:relative; right: 0px";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="👆";
+	} 
+	else {
+		qr="visibility: hidden;";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="订阅号";
+	}
+} 
+</script>
+</div>
+</body>
+</html>
