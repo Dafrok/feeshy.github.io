@@ -1,0 +1,13 @@
+# origin texts
+*.md
+*.txt
+*.rtf
+*.doc
+*.pdf
+
+# windows desktop.ini
+desktop.ini
+
+# frontpage local directories
+_vti_cnf/
+_vti_pvt/
