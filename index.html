@@ -17,13 +17,6 @@
 <link rel="stylesheet" type="text/css" href="style/home.css" />
 <script src="style/typekit.js"></script>
 <link rel="stylesheet" type="text/css" href="style/fonts.css" />
-<style type="text/css">
-.auto-style1 {
-	font-family: source-han-sans-cjk-sc, sans-serif;
-	font-weight: 200;
-	font-style: normal;
-}
-</style>
 </head>
 
 
@@ -31,7 +24,7 @@
 
 <div class="title">
 
-<h1>CONTENTS</h1>
+<h1 class="title">CONTENTS</h1>
 <br />
 <p><a href="ambient/index.html">§ Ambient §</a></p>
 <p><a href="poetry/index.html">§ 诗 §</a></p>
@@ -44,28 +37,9 @@
 </div>
 
 <div class="ui" >
-
-<img id="mp_qr" src="resources/mp_qr.png" alt="QR Code" width="128px" height="128px" style="visibility: hidden;">
-<p><a href="https://t.me/feeshy_updates" target="_blank">Telegram</a> | 
-<a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">订阅号</a> | 
+<a href="recent.html">最近更新</a> | 
 <a href="search.html">搜索</a>
 </p>
-
-<script>
-function qr_event(){
-	var qr=document.getElementById("mp_qr").style.cssText;
-	if (qr=="visibility: hidden;") {
-		qr="visibility: visible; position:relative; right: 0px";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="👆";
-	} 
-	else {
-		qr="visibility: hidden;";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="订阅号";
-	}
-} 
-</script>
 </div>
 </body>
 </html>
