@@ -1,30 +1,30 @@
 ﻿.title {
 	text-align: center;
-	font-family: Georgia, source-han-serif-sc, 华文中宋, serif ;
+	font-family: Georgia, source-han-serif-sc, "华文中宋", serif ;
 	font-weight: 600;
 	font-style: normal;
 }
 .text-center {
 	text-align: center;
-	font-family: Georgia, source-han-serif-sc, 方正宋三简体, serif ;
+	font-family: Georgia, source-han-serif-sc, "方正宋三简体", "华文宋体", "Songti SC", serif ;
 	font-weight: 400;
 	font-style: normal;
 }
 .text {
 	text-align: justify;
-	font-family: Georgia, source-han-serif-sc, 方正宋三简体, serif ;
+	font-family: Georgia, source-han-serif-sc, "方正宋三简体", "华文宋体", "Songti SC", serif ;
 	font-weight: 400;
 	font-style: normal;
 }
 .date {
 	text-align: right;
-	font-family: Georgia, source-han-serif-sc, 方正宋三简体, serif ;
+	font-family: Georgia, "华文仿宋", STFangsong, serif ;
 	font-weight: 300;
 	font-style: italic;
 }
 .ui {
 	text-align: right;
-	font-family: source-han-sans-cjk-sc, sans-serif;
+	font-family: sans-serif;
 	font-weight: 200;
 	font-style: normal;	
 }
