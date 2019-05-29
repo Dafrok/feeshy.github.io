@@ -31,29 +31,11 @@ img {
 <div class="ui" style="position: fixed; top: 1%; right: 10%;">
 
 <p style="color: #8a8a8a;"><a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">
-<img src="/resources/wechat.ico" alt="订阅号" height=16 /></a> | 
-
+<img src="/resources/wechat.ico" alt="订阅号" height=16 /></a>&bnsp;|&bnsp;
 <a href="https://t.me/feeshy_updates" target="_blank">
 <img src="/resources/telegram.ico" alt="Telegram" height=16 /></a></p>
 
 <img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" width=128 height=128 style="display: none;">
-
-<script>
-function qr_event() {
-	var qr=document.getElementById("mp_qr").style.cssText;
-	if (qr=="display: none;") {
-		qr="display: inline; margin:0 0 0 -128px; background-color: #ffffff;";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="&#x25BC";
-	} 
-	else {
-		qr="display: none;";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="<img src='/resources/wechat.ico' alt='订阅号' height=16 />";
-	}
-} 
-</script>
-
 </div>
 
 <div class="title">
@@ -77,7 +59,23 @@ function qr_event() {
 	<br /><br /><br />
 </div>
 
-<p class="foot"><a href="../search.html">&#x1F50D</a> | <a href="../">&#x1f4d5</a></p>
+<p class="foot"><a href="/search.html">&#x1F50D</a>&bnsp;|&bnsp;<a href="/">&#x1f4d5</a></p>
+
+<script>
+function qr_event() {
+	var qr=document.getElementById("mp_qr").style.cssText;
+	if (qr=="display: none;") {
+		qr="display: inline; margin:0 0 0 -128px; background-color: #ffffff;";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="&#x25BC";
+	} 
+	else {
+		qr="display: none;";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="<img src='/resources/wechat.ico' alt='订阅号' height=16 />";
+	}
+} 
+</script>
 
 </body>
 </html>
