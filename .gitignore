@@ -5,8 +5,9 @@
 *.doc
 *.pdf
 
-# windows desktop.ini
+# windows system file
 desktop.ini
+Thumbs.db
 
 # frontpage local directories
 _vti_cnf/
