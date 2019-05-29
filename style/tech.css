@@ -1,5 +1,9 @@
 ﻿body {
-	margin: 5% 10%;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	max-width: 80%;
 	background-color: #ffffff;
 	background-image: url("/style/natural-paper.png");
 	color: #222222;
@@ -7,4 +11,10 @@
 a {
 	color: #222222;
 	text-decoration: none;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
 }

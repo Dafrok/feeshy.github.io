@@ -17,10 +17,44 @@
 <link rel="stylesheet" type="text/css" href="/style/home.css" />
 <script src="/style/typekit.js"></script>
 <link rel="stylesheet" type="text/css" href="/style/fonts.css" />
+<style>
+img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	vertical-align: bottom;
+}
+</style>
 </head>
 
 
 <body>
+<div class="ui" style="position: fixed; top: 1%; right: 10%;">
+
+<p style="color: #8a8a8a;"><a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">
+<img src="/resources/wechat.ico" alt="订阅号" height=16 /></a> | 
+
+<a href="https://t.me/feeshy_updates" target="_blank">
+<img src="/resources/telegram.ico" alt="Telegram" height=16 /></a></p>
+
+<img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" width=128 height=128 style="display: none;">
+
+<script>
+function qr_event() {
+	var qr=document.getElementById("mp_qr").style.cssText;
+	if (qr=="display: none;") {
+		qr="display: inline; margin:0 0 0 -128px; background-color: #ffffff;";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="&#x25BC";
+	} 
+	else {
+		qr="display: none;";
+		document.getElementById("mp_qr").style=qr;
+		document.getElementById("mp_descrip").innerHTML="<img src='/resources/wechat.ico' alt='订阅号' height=16 />";
+	}
+} 
+</script>
+
+</div>
 
 <div class="title">
 
@@ -40,32 +74,10 @@
 		剧作家老王</a></p>
 	<p><a href="https://github.com/feeshy/tasker_profiles_share/blob/master/Offline_SMS_Forward/readme.md" target="_blank">
 		将短信离线转发到任何手机</a></p>
-
+	<br /><br /><br />
 </div>
 
-<div class="foot" >
+<p class="foot"><a href="../search.html">&#x1F50D</a> | <a href="../">&#x1f4d5</a></p>
 
-<img id="mp_qr" src="../resources/mp_qr.png" alt="QR Code" width="128px" height="128px" style="visibility: hidden;">
-<p><a href="https://t.me/feeshy_updates" target="_blank">Telegram频道</a> | 
-<a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">订阅号</a> | 
-<a href="../">主目录 &lt;</a>
-</p>
-
-<script>
-function qr_event(){
-	var qr=document.getElementById("mp_qr").style.cssText;
-	if (qr=="visibility: hidden;") {
-		qr="visibility: visible; position:relative; right: 0px";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="👆";
-	} 
-	else {
-		qr="visibility: hidden;";
-		document.getElementById("mp_qr").style=qr;
-		document.getElementById("mp_descrip").innerHTML="订阅号";
-	}
-} 
-</script>
-</div>
 </body>
 </html>

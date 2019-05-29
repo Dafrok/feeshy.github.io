@@ -18,7 +18,7 @@
 }
 .date {
 	text-align: right;
-	font-family: Georgia, "华文仿宋", STFangsong, serif ;
+	font-family: Georgia, "华文仿宋", STFangsong, "仿宋", serif ;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -33,7 +33,7 @@
 	font-family: sans-serif;
 	font-weight: 200;
 	font-style: normal;	
-	position:absolute;
+	position: fixed;
 	right: 10%;
 	bottom: 5%;
 }
