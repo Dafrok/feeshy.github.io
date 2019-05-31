@@ -1,18 +1,18 @@
 ﻿.title {
 	text-align: center;
-	font-family: '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, STZhongsong, '华文中宋', 'Songti SC', '华文宋体', STSong ,serif;
-	font-weight: 600;
+	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, STZhongsong, '华文中宋', 'Songti SC', '华文宋体', STSong ,serif;
+	font-weight: 700;
 	font-style: normal;
 }
 .text-center {
 	text-align: center;
-	font-family: '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, 'Songti SC', '华文宋体', STSong ,'方正宋三简体' , serif;
+	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, 'Songti SC', '华文宋体', STSong ,'方正宋三简体' , serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .text {
 	text-align: justify;
-	font-family: '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, 'Songti SC', '华文宋体', STSong, '方正宋三简体', serif;
+	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, 'Songti SC', '华文宋体', STSong, '方正宋三简体', serif;
 	font-weight: 400;
 	font-style: normal;
 }
