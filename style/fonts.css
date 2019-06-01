@@ -3,19 +3,21 @@
 	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, STZhongsong, '华文中宋', 'Songti SC', STSong, '方正姚体', serif;
 	font-weight: 700;
 	font-style: normal;
-	line-height: 28px;
+	line-height: 150%;
 }
 .text-center {
 	text-align: center;
 	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '方正宋三简体' ,'Songti SC', STSong, '华文宋体', serif;
 	font-weight: 400;
 	font-style: normal;
+	line-height: 150%;
 }
 .text {
 	text-align: justify;
 	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '方正宋三简体' ,'Songti SC', STSong, '华文宋体', serif;
 	font-weight: 400;
 	font-style: normal;
+	line-height: 150%;
 }
 .date {
 	text-align: right;
@@ -23,18 +25,21 @@
 	font-weight: 400;
 	font-style: normal;
 	font-variant-numeric: oldstyle-nums;
+	line-height: 150%;
 }
 .ui {
 	text-align: right;
 	font-family: sans-serif;
 	font-weight: 400;
 	font-style: normal;	
+	line-height: 150%;
 }
 .foot{
 	text-align: right;
 	font-family: sans-serif;
 	font-weight: 400;
 	font-style: normal;	
+	line-height: 150%;
 	position: fixed;
 	right: 10%;
 	bottom: 5%;
