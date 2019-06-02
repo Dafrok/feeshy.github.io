@@ -1,27 +1,27 @@
 ﻿.title {
 	text-align: center;
-	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, STZhongsong, '华文中宋', 'Songti SC', STSong, '方正姚体', serif;
-	font-weight: 700;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
+	font-weight: 600;
 	font-style: normal;
 	line-height: 150%;
 }
 .text-center {
 	text-align: center;
-	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '方正宋三简体' ,'Songti SC', STSong, '华文宋体', serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 150%;
 }
 .text {
 	text-align: justify;
-	font-family: Georgia, '思源宋体 CN', '思源宋体', 'Noto Serif CJK SC', 'Noto Serif CJK', 'Source Han Serif SC', ‘Source Han Serif’, source-han-serif-sc, '方正宋三简体' ,'Songti SC', STSong, '华文宋体', serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 150%;
 }
 .date {
 	text-align: right;
-	font-family: Candara, Palatino, '华文仿宋', '仿宋', serif;
+	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', 'Book Antiqua', '华文仿宋', STFangSong, '仿宋', '仿宋_GB2312', serif;
 	font-weight: 400;
 	font-style: normal;
 	font-variant-numeric: oldstyle-nums;
@@ -29,14 +29,14 @@
 }
 .ui {
 	text-align: right;
-	font-family: sans-serif;
+	font-family: '微软雅黑 Light', 'Microsoft Yahei Light', 'Microsoft Yahei UI Light', sans-serif;
 	font-weight: 400;
 	font-style: normal;	
 	line-height: 150%;
 }
 .foot{
 	text-align: right;
-	font-family: sans-serif;
+	font-family: '微软雅黑 Light', 'Microsoft Yahei Light', 'Microsoft Yahei UI Light', sans-serif;
 	font-weight: 400;
 	font-style: normal;	
 	line-height: 150%;
@@ -44,3 +44,7 @@
 	right: 10%;
 	bottom: 5%;
 }
+
+/*
+visit https://www.cssfontstack.com/ to check web safe fonts
+*/
