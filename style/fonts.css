@@ -1,36 +1,33 @@
 ﻿.title {
 	text-align: center;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
-	font-variant-ligatures: common-ligatures;
-	font-variant-numeric: oldstyle-nums;
 	line-height: 150%;
 }
 .text-center {
 	text-align: center;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
-	font-variant-ligatures: common-ligatures;
-	font-variant-numeric: oldstyle-nums;
 	line-height: 150%;
 }
 .text {
 	text-align: justify;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
-	font-variant-ligatures: common-ligatures;
-	font-variant-numeric: oldstyle-nums;
 	line-height: 150%;
 }
 .date {
 	text-align: right;
+<<<<<<< HEAD
 	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '华文仿宋', STFangSong, '仿宋', '仿宋_GB2312', 'Noto Serif SC', source-han-serif-sc, serif;
+=======
+	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', 'Book Antiqua', '华文仿宋', STFangSong, '仿宋', '仿宋_GB2312', serif;
+>>>>>>> parent of afa1380... now use google fonts as web font host
 	font-weight: 400;
 	font-style: normal;
-	font-variant-ligatures: common-ligatures;
 	font-variant-numeric: oldstyle-nums;
 	line-height: 150%;
 }
@@ -39,7 +36,6 @@
 	font-family: '微软雅黑 Light', 'Microsoft Yahei Light', 'Microsoft Yahei UI Light', '微软雅黑', sans-serif;
 	font-weight: 400;
 	font-style: normal;	
-	font-variant-ligatures: common-ligatures;
 	line-height: 150%;
 }
 .foot{
@@ -47,7 +43,6 @@
 	font-family: '微软雅黑 Light', 'Microsoft Yahei Light', 'Microsoft Yahei UI Light', '微软雅黑', sans-serif;
 	font-weight: 400;
 	font-style: normal;	
-	font-variant-ligatures: common-ligatures;
 	line-height: 150%;
 	position: fixed;
 	right: 10%;
