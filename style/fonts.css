@@ -1,20 +1,20 @@
 ﻿.title {
 	text-align: center;
-	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
 	line-height: 150%;
 }
 .text-center {
 	text-align: center;
-	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 150%;
 }
 .text {
 	text-align: justify;
-	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'EB Garamond', adobe-garamond-pro, '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	line-height: 150%;
