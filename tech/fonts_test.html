@@ -1,0 +1,93 @@
+﻿<html lang="zh-cn">
+
+<head>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+
+<title>Web 安全字体显示测试</title>
+<meta property="og:type" content="article" />
+<meta property="og:description" content="这个页面将会尝试调用常见的 Web 安全字体，测试你的操作系统和浏览器对其的支持情况" />
+<meta property="og:image" content="https://feeshy.github.io/resources/android-chrome-512x512.png" />
+
+<link rel="stylesheet" type="text/css" href="/style/tech.css" />
+</head>
+
+<body>
+<p>Web Safe Fonts 一般指在各个操作系统广泛预装，方便直接以CSS调用的字体。这个页面将会尝试调用常见的 Web 安全字体，测试你的操作系统和浏览器对其的支持情况。</p>
+<p>你也可以把本页面当作一个字体挑选器来使用。</p>
+<p>初步的候选字体列表来自 <a href="https://www.cssfontstack.com/" target="_blank">cssfontstack.com</a>。最终的列表经我在 <a href="https://developer.apple.com/fonts/system-fonts/" target="_blank">Apple</a> 与 <a href="https://docs.microsoft.com/en-us/typography/font-list/index" target="_blank">微软</a> 的官网逐个确认手工筛选得到。</p>
+<p style="fonts-style: italic; font-variant-numeric: oldstyle-nums;">2019/06/03</p>
+
+<hr />
+<h4>说明</h4>
+<p>(Apple) Mac OS、iOS均有预装</p>
+<p>(Mac) 仅Mac预装的字体 | (Mac D) Mac可用于文档显示的字体</p>
+<p>(Win) 随Windows预装的字体</p>
+<p>(Office) 随MS Office预装</p>
+<p>1. 字体名称如若不加标签，则说明该字体在各个系统得到广泛的覆盖，推荐设计网页时首选无标签的字体</p>
+<p>2. 同一段落显示的字体，多少有些相似性，适合把一种字体作为另一种的 fallback 使用</p>
+<p>3. Android 在这里毫无存在感，是因为截止到目前 (Android P)，随原生 Android 预装的字体仅仅有 <span style="font-family:'Droid Sans'">Droid Sans、</span><span style="font-family:'Droid Serif'">Droid Serif、</span><span style="font-family:'Droid Sans Mono'">Droid Sans Mono</span> 三种，且其中仅有 Droid Sans 支持中文字符，以至于毫无讨论的必要。</p>
+
+<hr />
+
+<div style="font-family:sans-serif">
+<h3>西文非衬线体</h3>
+	<p>"This is the default sans-serif of your browser"</p>
+	<p><span style="font-family:Arial">Arial</span>&nbsp;|&nbsp;<span style="font-family:Helvetica, sans-serif">Helvetica [Apple]</span></p>
+	<p><span style="font-family:Tahoma">Tahoma</span></p>
+	<p><span style="font-family:Verdana">Verdana</span></p>
+	<p><span style="font-family:'Lucida Grande'">Lucida Grande (Mac)</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans'">Lucida Sans (Win)</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans Unicode'">Lucida Sans Unicode (Win)</span></p>
+	<p><span style="font-family:'Trebuchet MS'">Trebuchet MS</span></p>
+	<p><span style="font-family:'Microsoft Sans Serif'">Microsoft Sans Serif (Win)(Mac)</span></p>
+	<p><span style="font-family:Impact">Impact</span></p>
+</div>
+
+<div style="font-family:serif">
+<h3>西文衬线体</h3>
+	<p>"This is the default serif of your browser"</p>
+	<p><span style="font-family:'Times New Roman'">Times New Roman</span></p>
+	<p><span style="font-family:Georgia">Georgia</span></p>
+	<p><span style="font-family:Palatino Linotype">Platino Linotype (Win)</span>&nbsp;|&nbsp;<span style="font-family:Palatino">Platino (Apple)</span></p>
+	<p><span style="font-family:Garamond">Garamond (Office)(Mac D)</span></p>
+	<p><span style="font-family:Rockwell">Rockwell (Apple)(Office)</span></p>
+	<p><span style="font-family:"></span></p>
+	<p><span style="font-family:"></span></p>
+</div>
+
+<div style="font-family:monospace">
+<h3>西文等宽体</h3>
+	<p>"This is the default monospace of your browser"</p>
+	<p><span style="font-family:'Courier New'">Courier New</span></p>
+	<p><span style="font-family:Consolas">Consolas (Win)</span></p>
+	<p><span style="font-family:Monaco">Monaco (Mac)</span></p>
+</div>
+
+<div class="font-family:sans-serif">
+<h3>中文黑体</h3>
+	<p>"黑体示例文字"</p>
+	<p><span style="font-family:'微软雅黑', 'Microsoft Yahei', 'Microsoft Yahei UI'">微软雅黑 (Win)</span></p>
+	<p><span style="font-family:'苹方 简', 'Pingfang SC'">苹方-简 (Apple)</span></p>
+	<p><span style="font-family:'Heiti SC'">黑体-简 (Mac)</span></p>
+	<p><span style="font-family:'Hiragino GB'">冬青黑体 (Mac)</span></p>
+</div>
+
+<div class="font-family:serif">
+<h3>中文宋体</h3>
+	<p>"宋体示例文字"</p>
+	<p><span style="font-family:'Heiti SC'">宋体-简 (Mac)</span></p>
+	<p><span style="font-family:'STSong'">华文宋体 (Mac)</span>&nbsp;|&nbsp;<span style="font-family:'华文宋体'">华文宋体 (Office)</span></p>
+</div>
+
+<div class="font-family:fangsong">
+<h3>中文仿宋</h3>
+	<p>"仿宋示例文字"</p>
+	<p><span style="font-family:'Heiti SC'">宋体-简 (Mac)</span></p>
+	<p><span style="font-family:'STFangsong'">华文仿宋 (Mac)</span>&nbsp;|&nbsp;<span style="font-family:'华文仿宋'">华文仿宋 (Office)</span></p>
+</div>
+</div>
+
+<div class="text"><br /><br /><br /><nav class="ui" href="./">&lt;</nav>
+
+</body>
+
+</html>
