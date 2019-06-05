@@ -1,15 +1,49 @@
-﻿.title {
+﻿@font-face {
+  font-family: 'ebg';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(/style/EBGaramond-Regular.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'ebg';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: rrl(/style/EBGaramond-SemiBold.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'ebg';
+  font-style: normal, ;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(/style/EBGaramond-Regular_ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'ebg';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url(/style/EBGaramond-SemiBold_ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+.title {
 	text-align: center;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '华文中宋', STZhongsong, 'Songti SC Bold', '方正姚体', serif;
+	font-family: 'EB Garamond', 'Adobe Garamond Pro', ebg, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
+	font-display: fallback;
 	font-variant-ligatures: common-ligatures;
 	font-variant-numeric: oldstyle-nums;
 	line-height: 150%;
 }
 .text-center {
 	text-align: center;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: 'EB Garamond', 'Adobe Garamond Pro', ebg, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	font-variant-ligatures: common-ligatures;
@@ -18,7 +52,7 @@
 }
 .text {
 	text-align: justify;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体' ,'Songti SC Regular', '华文宋体', STSong, serif;
+	font-family: 'EB Garamond', 'Adobe Garamond Pro', ebg, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 	font-variant-ligatures: common-ligatures;
@@ -27,7 +61,7 @@
 }
 .date {
 	text-align: right;
-	font-family: 'EB Garamond', adobe-garamond-pro, Palatino, 'Palatino Linotype', '华文仿宋', STFangSong, '仿宋', '仿宋_GB2312', '思源宋体', 'Noto Serif SC', source-han-serif-sc, fangsong;
+	font-family: 'EB Garamond', 'Adobe Garamond Pro', ebg, Palatino, 'Palatino Linotype', '华文仿宋', STFangSong, simfang, '思源宋体', 'Noto Serif SC', source-han-serif-sc, fangsong;
 	font-weight: 400;
 	font-style: normal;
 	font-variant-ligatures: common-ligatures;
