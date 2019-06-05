@@ -2,7 +2,7 @@
 	line-height: 150%;	
 	font-variant-ligatures: discretionary-ligatures;
 	font-variant-numeric: oldstyle-nums;
-	font-synthesis: none;
+	font-synthesis: weight;
 }
 
 @font-face {
