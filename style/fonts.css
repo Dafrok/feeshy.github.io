@@ -10,14 +10,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
-  src: url(/style/EBGaramond-Regular.woff) format('woff');
+  src: url(/style/EBGaramond12-Regular.woff) format('woff');
 }
 @font-face {
   font-family: ebgara;
   font-style: italic;
   font-weight: 400;
   font-display: fallback;
-  src: url(/style/EBGaramond-Italic.woff) format('woff');
+  src: url(/style/EBGaramond12-Italic.woff) format('woff');
 }
 
 :root {
