@@ -33,7 +33,7 @@
 
 .title {
 	text-align: center;
-	font-family: 'EB Garamond', 'Adobe Garamond Pro', ebg, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
+	font-family: ebg, Palatino, 'Palatino Linotype', '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc, 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
 	font-display: fallback;
