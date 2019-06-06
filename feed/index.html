@@ -9,19 +9,21 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
 <link rel="manifest" href="/resources/site.webmanifest">
 <link rel="mask-icon" href="/resources/safari-pinned-tab.svg" color="#403f5f">
-<link rel="shortcut icon" href="/resources/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#403f5f">
 <meta name="msapplication-config" content="/resources/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<title>最近更新</title>
-<link rel="stylesheet" type="text/css" href="/style/home.css" />
+<title>最近更新 - 浮鲜</title>
+<link href="/style/layout.css" rel="stylesheet" />
+<link href="/style/home.css" rel="stylesheet" />
+<link href="/style/fonts.css" rel="stylesheet" />
 <script src="/style/typekit.js"></script>
-<link rel="stylesheet" type="text/css" href="/style/fonts.css" />
 <style>
 img {
+	display: inline;
+	vertical-align:middle;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	vertical-align: bottom;
 }
 </style>
 </head>
@@ -35,13 +37,13 @@ img {
 <a href="https://t.me/feeshy_updates" target="_blank">
 <img src="/resources/telegram.ico" alt="Telegram" height=16 /></a></p>
 
-<img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" width=128 style="display: none;">
+<img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" style="display: none;">
 </div>
 
 <div class="title">
 
-<h1>最近更新</h1>
-<br />
+	<h1>最近更新</h1>
+	<br />
 	<p><a href="/prose/nonexist.html">
 		不存在的故事</a></p>
 	<p><a href="https://mp.weixin.qq.com/s/MP1BozYobsjQjVLTTOxxgw" target="_blank">
@@ -56,8 +58,10 @@ img {
 		剧作家老王</a></p>
 	<p><a href="https://github.com/feeshy/tasker_profiles_share/blob/master/Offline_SMS_Forward/readme.md" target="_blank">
 		将短信离线转发到任何手机</a></p>
-	<br /><br /><br />
+	<br />
 </div>
+
+<div id="searchbox" style="visibility: hidden;"><gcse:search></gcse:search></div>
 
 <nav class="foot"><a href="/search/">&#x1F50D</a>&nbsp;|&nbsp;<a href="/">&#x1f4d5</a></nav>
 
@@ -74,8 +78,9 @@ function qr_event() {
 		document.getElementById("mp_qr").style=qr;
 		document.getElementById("mp_descrip").innerHTML="<img src='/resources/wechat.ico' alt='订阅号' height=16 />";
 	}
-} 
+}
 </script>
 
 </body>
+
 </html>

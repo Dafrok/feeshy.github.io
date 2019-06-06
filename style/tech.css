@@ -1,12 +1,10 @@
-body {
-	margin-top: 5%;
+﻿body {
+	margin: 5% auto;
 	position: relative;
 	top: 20px;
-	margin-left: auto;
-	margin-right: auto;
 	width: 550px;
 	max-width: 80%;
-	background-color: #ffffff;
+	background-color: #fcfcfc;
 	background-image: url("/style/natural-paper.png");
 	color: #222222;
 }

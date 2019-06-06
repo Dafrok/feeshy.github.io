@@ -6,46 +6,62 @@
 }
 
 @font-face {
-  font-family: ebgara;
-  font-style: normal;
-  font-weight: 400;
-  font-display: fallback;
-  src: url(/style/EBGaramond12-Regular.woff) format('woff');
+	font-family: gara;
+	font-style: normal;
+	font-display: fallback;
+	font-weight: 400;
+	src:
+		local("EB Garamond"),
+		local("Adobe Garamond Pro"),
+		url(/style/EBGaramond12-Regular.woff) format("woff");
 }
 @font-face {
-  font-family: ebgara;
-  font-style: italic;
-  font-weight: 400;
-  font-display: fallback;
-  src: url(/style/EBGaramond12-Italic.woff) format('woff');
+	font-family: gara;
+	font-style: italic;
+	font-weight: 400;
+	font-display: fallback;
+	src: 
+		local("EB Garamond Italic"),
+		local("Adobe Garamond Pro SemiBold"),
+		url(/style/EBGaramond12-Italic.woff) format("woff");
+}
+@font-face {
+	font-family: gara;
+	font-style: normal;
+	font-display: fallback;
+	font-weight: 600;
+	src:
+		local("EB Garamond SemiBold"),
+		local("Adobe Garamond Pro SemiBold");
 }
 
+
 :root {
-	--latin: 'EB Garamond', ebgara, 'Adobe Garamond Pro', Palatino, 'Palatino Linotype';
-	--han-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
+	--pala: Palatino, 'Palatino Linotype';
+	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
 }
 
 .title {
 	text-align: center;
-	font-family: var(--latin), var(--han-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
+	font-family: gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
 }
 .text-center {
 	text-align: center;
-	font-family: var(--latin), var(--han-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .text {
 	text-align: justify;
-	font-family: var(--latin), var(--han-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .date {
 	text-align: right;
-	font-family: var(--latin), '华文仿宋', STFangSong, '仿宋', fangsong, var(--han-serif);
+	font-family: gara, var(--pala), '华文仿宋', STFangSong, '仿宋', fangsong, var(--zh-serif);
 	font-weight: 400;
 	font-style: italic;
 }
