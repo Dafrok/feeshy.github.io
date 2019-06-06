@@ -1,8 +1,9 @@
-﻿body {
-	line-height: 150%;	
-	font-variant-ligatures: discretionary-ligatures;
-	font-variant-numeric: oldstyle-nums;
+﻿:root {
+	line-height: calc(1.25em + 1.25vh);	
+	font-variant: discretionary-ligatures, oldstyle-nums;
 	font-synthesis: weight;
+	--pala: Palatino, 'Palatino Linotype';
+	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
 }
 
 @font-face {
@@ -35,12 +36,6 @@
 		local("Adobe Garamond Pro SemiBold");
 }
 
-
-:root {
-	--pala: Palatino, 'Palatino Linotype';
-	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
-}
-
 .title {
 	text-align: center;
 	font-family: gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
@@ -70,13 +65,4 @@
 	font-family: system-ui;
 	font-weight: 400;
 	font-style: normal;	
-}
-.foot{
-	text-align: right;
-	font-family: system-ui;
-	font-weight: 400;
-	font-style: normal;	
-	position: fixed;
-	right: 10%;
-	bottom: 5%;
 }

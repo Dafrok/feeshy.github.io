@@ -1,4 +1,4 @@
-﻿body {
+﻿:root {
 	background-color: #f9f4dc;
 	background-image: url("/style/natural-paper.png");
 	color: #222222;
@@ -6,4 +6,7 @@
 a {
 	color: #222222;
 	text-decoration: none;
+}
+a:hover {
+	color: #444444;
 }
