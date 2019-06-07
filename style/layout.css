@@ -1,12 +1,12 @@
 ﻿body {
-	margin: 10vh auto;
+	margin: 5vh auto;
 	width: 80%;
 	max-width: 512px;
 }
 
-@media (min-height: 360px){
+@media (min-height: 480px){
 	body>:not(nav) {
-		transform: translateY(calc(15vh - 54px));
+		transform: translateY(calc(100vh / 3 - 160px));
 	}
 }
 
