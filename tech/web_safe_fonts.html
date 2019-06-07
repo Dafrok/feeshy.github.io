@@ -1,4 +1,4 @@
-<html lang="zh-cn">
+﻿<html lang="zh-cn">
 
 <head>
 <meta charset=utf-8 />
@@ -6,7 +6,7 @@
 
 <title>常用 Web 字体显示测试</title>
 <meta property="og:type" content="article" />
-<meta property="og:description" content="这个页面将会尝试调用常见的 Web 安全字体，测试你的操作系统和浏览器对其的支持情况" />
+<meta property="og:description" content="这个页面将会尝试调用常见的 Web 字体，测试你的操作系统和浏览器对其的支持情况" />
 
 <link rel="stylesheet" href="/style/layout.css" />
 <link rel="stylesheet" href="/style/tech.css" />
@@ -38,7 +38,7 @@ p {
 		<p>这个页面将会尝试调用常见的 Web 安全字体，测试你的操作系统和浏览器对其的支持情况。</p>
 		<p>或者你也可以把本页面当作一个字体挑选器来使用。</p>
 		<p>初步的候选字体列表来自 <a href="https://www.cssfontstack.com/" target="_blank">cssfontstack.com</a>。最终的列表经我在 <a href="https://developer.apple.com/fonts/system-fonts/" target="_blank">Apple</a> 与 <a href="https://docs.microsoft.com/en-us/typography/font-list/index" target="_blank">微软</a> 的官网逐个确认手工筛选得到。</p>
-		<p style="text-align:right; font-style: italic; font-variant-numeric: oldstyle-nums;">2019/06/04</p>
+		<p style="text-align:right; font-style: italic; font-variant-numeric: oldstyle-nums;">2019/06/07</p>
 	</section>
 	<hr />
 
@@ -48,8 +48,8 @@ p {
 			<a href="javascript:void(0);" onclick="helvetica()"><span style="font-family:Arial">
 			Arial</span>&nbsp;|&nbsp;<span style="font-family:Helvetica, sans-serif">[Apple] Helvetica</span></a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelveticaSpecimenCH.svg/250px-HelveticaSpecimenCH.svg.png" id="helvetica" style="display: none;"><br />
-			Helvetica是一种非常常见、非常经典的的无衬线字体。如3M、爱克发、BASF、American Apparel、BMW、Crate & Barrel 箱桶之家、Epson、德国汉莎航空公司、Fendi、J. C. Penney、Jeep、川崎重工业、Knoll、英特尔、无印良品、雀巢、松下、微软、三菱电机、摩托罗拉、丰田、Parmalat、SAAB（Helvetica 83粗体）、三星、渣打银行、Staples、Target、Texaco等数百间主要企业的标志都是使用Helvetica字体。<br />Arial是一种与Helvetica非常相似的字体。
-		</p>
+			Helvetica是一种非常著名、非常经典的的无衬线字体。如3M、BMW、Epson、汉莎航空、Jeep、川崎重工、英特尔、无印良品、雀巢、松下、微软、三菱电机、摩托罗拉、丰田、三星、渣打银行等数百间主要企业的标志都是使用的 Helvetica字体。<br />
+			可惜的是，微软未曾购买过 Helvetica 字体的版权，而是采购了与 Helvetica 非常相似的Arial。也正是由于这样的历史原因，目前 Arial 的覆盖度要比 Helvetica 好得多。</p>
 		<p style="font-family:Tahoma"><a href="javascript:void(0);" onclick="tahoma()">
 			Tahoma</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tahoma.svg/240px-Tahoma.svg.png" id="tahoma" style="display: none;"><br />
@@ -59,24 +59,24 @@ p {
 			Verdana</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/VerdanaSpecimen.svg/250px-VerdanaSpecimen.svg.png" id="verdana" style="display: none;"><br />
 			90年代 Matthew Carter 为微软设计的网页字体，现在已经成为事实上的网页设计标准字体之一。
-		</p>
-		<p><a href="javascript:void(0);" onclick="lucida()">
-			<span style="font-family:'Lucida Grande'">[mac]Lucida Grande</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans'">[Win] Lucida Sans</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans Unicode'">[Win] Lucida Sans Unicode</span></a><br />
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/LucidaGrandeSpecAIB.svg/240px-LucidaGrandeSpecAIB.svg.png" id="lucida" style="display: none;"><br />
-			21世纪初 Apple macOS 的默认字体，最新的 macOS 仍然预装。Windows 平台预装的相似字体名称为 Lucida Sans。
-		</p>
+		Verdana 也是目前宜家家居指南所用的字体。</p>
 		<p style="font-family:'Trebuchet MS'"><a href="javascript:void(0);" onclick="trebuchet()">
 			Trebuchet MS</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/TrebuchetMS_SP.svg/250px-TrebuchetMS_SP.svg.png" id="trebuchet" style="display: none;"><br />
-		90年代诞生的专为网页排版设计的微软字体，已经成为事实上的网页设计标准字体之一。Trebuchet MS 的字形要比另外三套字体更加有特色。
+		90年代诞生的专为网页排版设计的微软字体，已经成为事实上的网页设计标准字体之一。Trebuchet MS 的字形要比另外几套字体更加有特色。
+		</p>
+		<p style="font-family:'Comic Sans MS'">
+			[Win] Comic Sans MS<br /><br />
+			微软提供的一种漫画风格的艺术字体。Windows 平台的预装字体，同时也是 iOS 的可下载字体。</p>
+		<p><a href="javascript:void(0);" onclick="lucida()">
+			<span style="font-family:'Lucida Grande'">[mac]Lucida Grande</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans'">[Win] Lucida Sans</span>&nbsp;|&nbsp;<span style="font-family:'Lucida Sans Unicode'">[Win] Lucida Sans Unicode</span></a><br />
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/LucidaGrandeSpecAIB.svg/240px-LucidaGrandeSpecAIB.svg.png" id="lucida" style="display: none;"><br />
+			21世纪初 Apple macOS 的默认字体，后被 
+		Helvetica 代替，不过最新的 macOS 仍然预装。Windows 平台预装的相似字体名称为 Lucida Sans。
 		</p>
 		<p style="font-family:Impact">
 			[Win][mac] Impact<br /><br />
 			一种适合用作标题的粗体。
-		</p>
-		<p style="font-family:Comic Sans">
-			Comic Sans<br /><br />
-			一种个性鲜明的艺术字体。
 		</p>
 	</section>
 	
@@ -85,14 +85,14 @@ p {
 		<p style="font-family:'Times New Roman'"><a href="javascript:void(0);" onclick="times()">
 			Times New Roman</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Times_New_Roman-sample.svg/250px-Times_New_Roman-sample.svg.png" id="times" style="display: none;"><br />
-			可能是最常见且广为人知的衬线字体之一，在字体设计上属于过渡型衬线体，对后来的字型产生了很深远的影响。另外由于其中规中矩、四平八稳的经典外观，所以经常被选择为标准字体之一。
-			《泰晤士报》首次采用了Times New Roman后，这个字型很快地博得了大众的青睐，获得了极大的成功。尽管泰晤士报已不再使用Times New Roman，但Times New Roman已成为经典字型之一，迄今仍广泛使用在图书、杂志、报告、公文、广告、萤幕显示等。
+			可能是最常见且广为人知的衬线字体之一，在字体设计上属于过渡型衬线体，对后来的字型产生了很深远的影响。
+			《泰晤士报》首次采用了 Times New Roman 后，这个字型很快地博得了大众的青睐，获得了极大的成功。尽管泰晤士报已不再使用Times New Roman，这个字形已成为经典。
 		</p>
 		<p style="font-family:Georgia"><a href="javascript:void(0);" onclick="georgia()">
 			Georgia</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/GeorgiaSpecimenAIB.svg/250px-GeorgiaSpecimenAIB.svg.png" id="georgia" style="display: none;"><br />
-			Matthew Carter为微软设计的<span style="font-family:Verdana">Verdana</span>的衬线体，数字采用 old style 设计
-		</p>
+			Matthew Carter为微软设计的<span style="font-family:Verdana">几套网页字体中，Georgia 
+		是作为与 Verdana 相对</span>的衬线体而存在的。Georgia 非常适合屏幕阅读。数字采用非常有特色的 old style 风格设计。</p>
 		<p><a href="javascript:void(0);" onclick="palatino()">
 			<span style="font-family:Palatino Linotype">[Win] Platino Linotype</span>&nbsp;|&nbsp;<span style="font-family:Palatino">[Apple] Platino</span></a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Palatino_font_sample.svg/198px-Palatino_font_sample.svg.png" id="palatino" style="display: none;"><br />
@@ -101,12 +101,12 @@ p {
 		<p style="font-family:Garamond;font-feature-settings: 'swsh';font-feature-settings: 'liga', 'xtex';"><a href="javascript:void(0);" onclick="garamond()">
 			[Office][mac] Garamond</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/GaramondSpecimenA.svg/250px-GaramondSpecimenA.svg.png" id="garamond" style="display: none;"><br />
-			一类源于16世纪法国印刷版的旧衬线体。有多种数字化版本，例如微软 Office 所附带的Monotype Garamond。例如本博客的首选 OpenType 西文字体 <span style="font-family:'EB Garamond'">EB Garamond</span> 
+			Garamond 是一类源于16世纪法国印刷版的旧衬线体的统称。目前存在许多数字化版本，例如微软 Office 所附带的Monotype Garamond。例如本博客的首选 OpenType 西文字体 <span style="font-family:'EB Garamond'">EB Garamond</span> 
 		</p>
 		<p style="font-family:Rockwell"><a href="javascript:void(0);" onclick="rockwell()">
 			[Apple][Office]Rockwell</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/RockwellWM.png/220px-RockwellWM.png" id="rockwell" style="display: none;"><br />
-			一种长青的粗衬线体，比一般的衬线体更加有活力。 macOS 与 iOS 预装，Office 附带。
+			一种长青的粗衬线体，比一般的衬线体更加富有活力。 macOS 与 iOS 预装，Office 附带。
 		</p>
 	</section>
 	
@@ -148,7 +148,7 @@ p {
 			[mac] 黑体-简</a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/zh/thumb/c/c7/Heiti_SC.png/300px-Heiti_SC.png" id="heiti" style="display: none;"><br />
 			由华文黑体、华文细黑修改而来，提供两种字重。是 iOS9 之前 iOS 设备的简中默认字体。<br />
-			目前 黑体-简 已被 <span style="font-family:'Pingfang SC', '苹方 简'">苹方-简</span> 代替。macOS 仍然预装，iOS 设备需通过 Font Book 下载。
+			目前 黑体-简 已被 <span style="font-family:'Pingfang SC', '苹方 简'">苹方-简</span> 代替。macOS 仍然预装，iOS 设备需下载。
 		</p>
 	
 		<p style="font-family:'STXihei','华文细黑'"><a href="javascript:void(0);" onclick="xihei()">
@@ -168,9 +168,8 @@ p {
 	
 		<p style="font-family:'STSong', '华文宋体'">
 			[mac] [Office] 华文宋体<br /><br />
-			macOS 预装的一种宋体，Windows 平台上会随 Office 中文版附带。同中易宋体一样，华文宋体也没有为屏幕显示优化。仅提供单一字重。<br />
+			macOS 预装的一种宋体，Windows 平台上会随 Office 中文版附带。同中易宋体一样，华文宋体也没有为屏幕显示优化。仅提供单一字重。细节上，华文宋体的西文要比中易宋体的耐看一些。<br />
 			事实上，对于网页排版来说，华文宋体所提供的字重轻了些。为了避免过于频繁地使用仿粗体，应当考虑与同为 Office 附带的 <span style="font-family:'STZhongsong', '华文中宋'">华文中宋</span> 搭配使用。<br />
-			华文宋体的西文要比中易宋体的耐看一些。<br />
 			
 		</p>
 	
