@@ -4,19 +4,21 @@
 <head>
 <meta charset=utf-8/>
 <meta name="viewport" content="width=device-width, viewport-fit=cover" />
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
-<link rel="manifest" href="/resources/site.webmanifest">
+<link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/resources/safari-pinned-tab.svg" color="#403f5f">
 <link rel="shortcut icon" href="/favicon.ico">
 <meta name="msapplication-TileColor" content="#403f5f">
 <meta name="msapplication-config" content="/resources/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<title>最近更新 - 浮鲜</title>
-<link href="/style/layout.css" rel="stylesheet" />
-<link href="/style/home.css" rel="stylesheet" />
-<link href="/style/fonts.css" rel="stylesheet" />
+
+<title>最近 - 浮鲜</title>
+<link rel="stylesheet" href="/style/layout.css" />
+<link rel="stylesheet" href="/style/home.css" />
+<link rel="stylesheet" href="/style/fonts.css" />
 <script src="/style/typekit.js"></script>
 <style>
 img {
@@ -28,20 +30,17 @@ img {
 </style>
 </head>
 
-
 <body>
-<div class="ui" style="position: fixed; top: 5%; right: 5%;">
 
-<p style="color: #8a8a8a;"><a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">
-<img src="/resources/wechat.ico" alt="订阅号" height=16 /></a>&nbsp;|&nbsp;
-<a href="https://t.me/feeshy_updates" target="_blank">
-<img src="/resources/telegram.ico" alt="Telegram" height=16 /></a></p>
-
-<img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" style="display: none;">
-</div>
+<nav style="position: fixed; top: 8%; right: 5%;">
+	<a style="color: #8a8a8a;"><a id="mp_descrip" href="javascript:void(0);" onclick="qr_event()">
+		<img src="/resources/wechat.ico" alt="订阅号" height=16 /></a>&nbsp;|&nbsp;
+	<a href="https://t.me/feeshy_updates" target="_blank">
+		<img src="/resources/telegram.ico" alt="Telegram" height=16 /></a><br />
+	<img id="mp_qr" src="/resources/mp_qr.png" alt="QR Code" width="128" height="128" style="display: none;">
+</nav>
 
 <div class="title">
-
 	<h1>最近更新</h1>
 	<br />
 	<p><a href="/prose/nonexist.html">
@@ -61,15 +60,15 @@ img {
 	<br />
 </div>
 
-<div id="searchbox" style="visibility: hidden;"><gcse:search></gcse:search></div>
-
-<nav class="ui"><a href="/search/">&#x1F50D</a>&nbsp;|&nbsp;<a href="/">&#x1f4d5</a></nav>
+<nav>
+	<a href="/search/">&#x1F50D</a>&nbsp;|&nbsp;<a href="/">&#x1f4d5</a>
+</nav>
 
 <script>
 function qr_event() {
 	var qr=document.getElementById("mp_qr").style.cssText;
 	if (qr=="display: none;") {
-		qr="display: inline; margin:0 0 0 -128px; background-color: #ffffff;";
+		qr="display: inline; margin:0 0 0 -128; background-color: #ffffff;";
 		document.getElementById("mp_qr").style=qr;
 		document.getElementById("mp_descrip").innerHTML="&#x25BC";
 	} 

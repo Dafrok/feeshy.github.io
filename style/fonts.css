@@ -60,7 +60,7 @@
 	font-weight: 400;
 	font-style: italic;
 }
-.ui {
+.ui, nav {
 	text-align: right;
 	font-family: system-ui;
 	font-weight: 400;
