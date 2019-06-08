@@ -16,13 +16,25 @@
 <meta name="theme-color" content="#ffffff">
 <title>搜索 - 浮鲜</title>
 
-<link rel="stylesheet" href="/style/layout.css" />
-<link rel="stylesheet" href="/style/fonts.css" />
 <style>
 body {
+	margin: 5vh auto;
 	width: 768px;
+	max-width: 80%;
 	background-color: #fbf2e3;
 	color: #222222;
+}
+@media (min-height: 480px){
+	body>:not(nav) {
+		transform: translateY(calc(100vh / 3 - 160px));
+	}
+}
+
+nav {
+	position: fixed;
+	right: 5%;
+	bottom: 7.5%;
+	z-index: 999;
 }
 a {
 	color: #222222;
@@ -30,15 +42,26 @@ a {
 }
 </style>
 
-<script src="searchbox.js"></script>
+<link rel="stylesheet" href="/style/fonts.css" />
 <script src="/style/typekit.js"></script>
 
 </head>
 
 <body>
 
-<h1 class="title">搜索</h1>
-<br />
+<h1 class="title">搜索</h1><br />
+
+<script>
+  (function() {
+    var cx = '002093486978024606124:caqnm_ayaoq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 <gcse:search></gcse:search>
 
 <nav class="ui"><a href="/">&#x1f4d5</a>&nbsp;|&nbsp;<a href="/feed/">&#x1f552</a></nav>

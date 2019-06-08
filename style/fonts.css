@@ -1,12 +1,4 @@
-﻿:root {
-	line-height: calc(1.25em + 1.25vh);	
-	font-variant: discretionary-ligatures, oldstyle-nums;
-	font-synthesis: weight;
-	--pala: Palatino, 'Palatino Linotype';
-	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
-}
-
-@font-face {
+﻿@font-face {
 	font-family: gara;
 	font-style: normal;
 	font-display: fallback;
@@ -36,6 +28,14 @@
 		local("Adobe Garamond Pro SemiBold");
 }
 
+:root {
+	line-height: calc(1.2em + 1.5vh);	
+	font-variant: discretionary-ligatures, oldstyle-nums;
+	font-synthesis: weight;
+	--pala: Palatino, 'Palatino Linotype';
+	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
+}
+
 .title {
 	text-align: center;
 	font-family: gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
@@ -61,8 +61,25 @@
 	font-style: italic;
 }
 .ui, nav {
-	text-align: right;
+	text-align: center;
 	font-family: system-ui;
 	font-weight: 400;
-	font-style: normal;	
+	font-style: normal;
+	line-height: calc(1.5em + 1.25vh);
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+}
+
+table {
+	text-align: justify;
+	font-size: smaller;
+	font-family: "Noto Sans Mono CJK SC", "思源黑体 HW", "文泉驿等宽微米黑", monospace;
+	font-weight: 400;
+	font-variant-numeric:tabular-nums, lining-nums;
+}
+table tr:first-child {
+	text-align: center;
+	font-weight: 600;
 }

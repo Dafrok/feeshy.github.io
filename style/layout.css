@@ -1,13 +1,19 @@
 ﻿body {
 	margin: 5vh auto;
-	width: 80%;
-	max-width: 512px;
+	width: 512px;
+	max-width: 80%;
 }
-
 @media (min-height: 480px){
 	body>:not(nav) {
 		transform: translateY(calc(100vh / 3 - 160px));
 	}
+}
+
+nav {
+	position: fixed;
+	right: 5%;
+	bottom: 7.5%;
+	z-index: 999;
 }
 
 img {
@@ -16,9 +22,13 @@ img {
 	text-align: center;
 	max-width: 100%;
 }
-
-nav {
-	position: fixed;
-	right: 5%;
-	bottom: 8%;
+table {
+	width: 120%;
+	margin-left: -10%;
+	vertical-align: middle;
+	overflow: auto;
+}
+td {
+	padding:0.25em 0.5em 0.25em 0.5em;
+	border:thin #888888 dotted;
 }
