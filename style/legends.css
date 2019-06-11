@@ -17,3 +17,10 @@ nav {
 	border-radius: 50%;
 	background-color: RGBA(255,255,255,0.5);
 }
+
+@media print and (min-aspect-ratio: 4/3) {
+	body {
+		width: 95%;
+		column-count: 2;
+		column-gap: 5%;
+}}
