@@ -38,35 +38,35 @@ code {
 <body>
 <h1><em>@font-face local()</em> does not work properly for multi weight typeface</h1>
 
-<code>
+<pre><code>
 @font-face {
 	font-family: r;
 	font-weight: 400;
 	src: local("Times New Roman");
 }
-</code><br />
+</code></pre><br />
 
-<code>p style="font-family:r; font-weight:400;"</code>
+<pre><code>p style="font-family:r; font-weight:400;"</code></pre>
 <p style="font-family:r; font-weight:400;">
 // It works fine for regular font.</p>
 
 <br /><hr/><br />
 
-<code>style="font-family:'Times New Roman'; font-weight:700;"</code>
+<pre><code>style="font-family:'Times New Roman'; font-weight:700;"</code></pre>
 
 <p style="font-family:'Times New Roman'; font-weight:700;">
 // This is the bold weight I want.</p>
 
 <br />
 
-<code>
+<pre><code>
 @font-face {
 	font-family: b;
 	font-weight: 700;
 	src: local("Times New Roman Bold");
-}</code><br />
+}</code></pre><br />
 
-<code>style="font-family:b;font-weight:700;"</code>
+<pre><code>style="font-family:b;font-weight:700;"</code></pre>
 <p style="font-family:b; font-weight:700;">
 // On this condition, chrome will not detect the local bold variant. Meanwhile, MS browsers work properly:</p>
 
@@ -79,33 +79,33 @@ IE11:<br />
 
 <br /><hr /><br />
 
-<code>style="font-family:'Times New Roman'; font-weight:700;"</code>
+<pre><code>style="font-family:'Times New Roman'; font-weight:700;"</code></pre>
 
 <p style="font-family:'Times New Roman'; font-weight:700;">
 // This is the bold weight I want.</p>
 
 <p>By the way, when I tried some logically 'wrong' code,</p>
 
-<code>
+<pre><code>
 @font-face {
 	font-family: b-alt;
 	font-weight: 700;
 	src: local('Times New Roman');
 }
-</code>
+</code></pre>
 <br />
-<code>style="font-family:b-alt; font-weight:700;"</code>
+<pre><code>style="font-family:b-alt; font-weight:700;"</code></pre>
 <p style="font-family:b-alt; font-weight:700;">
 // The 'wrong' code does not work either.<br /></p>
 
-<code>
+<pre><code>
 @font-face {
 	font-family: r;
 	font-weight: 400;
 	src: local("Times New Roman");
-}</code><br />
+}</code></pre><br />
 
-<code>style="font-family:r; font-weight:700;"</code>
+<pre><code>style="font-family:r; font-weight:700;"</code></pre>
 <p style="font-family:r; font-weight:700;">
 // Nor does this one. It causes browser sythetic font weight. </p>
 
