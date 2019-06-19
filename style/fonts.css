@@ -27,6 +27,15 @@
 		local("EB Garamond SemiBold"),
 		local("Adobe Garamond Pro SemiBold");
 }
+@font-face {
+	font-family: fangsong-non-italic;
+	font-style: italic;
+	src:
+		local("华文仿宋"),
+		local("STFangSong"),
+		local("仿宋"),
+		local("fangsong");
+}
 
 :root {
 	line-height: calc(1.2rem + 1.5vh);	
@@ -57,7 +66,7 @@
 }
 .date {
 	text-align: right;
-	font-family: var(--gara), gara, var(--pala), '华文仿宋', STFangSong, '仿宋', fangsong, var(--zh-serif);
+	font-family: var(--gara), gara, var(--pala), fangsong-non-italic, var(--zh-serif);
 	font-weight: 400;
 	font-style: italic;
 }
