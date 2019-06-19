@@ -32,7 +32,6 @@
 @font-face {
 	font-family: fangsong-non-italic;
 	font-style: italic;
-
 	font-display: fallback;
 	src: local("华文仿宋"), local("STFangSong"), local("仿宋"), local("fangsong"), local("Kaiti SC"), local("华文楷体");
 }
