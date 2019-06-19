@@ -34,51 +34,60 @@
 		local("华文仿宋"),
 		local("STFangSong"),
 		local("仿宋"),
-		local("fangsong");
+		local("fangsong"),
+		local("Kaiti SC"),
+		local("华文楷体");
 }
-
+@font-face {
+	font-family: biaosong;
+	font-weight: 600;
+	src:
+		local("华文中宋"),
+		local("STZhongsong"),
+		local("方正小标宋简体");
+}
 :root {
 	line-height: calc(1.2rem + 1.5vh);	
 	font-variant: discretionary-ligatures oldstyle-nums;
 	font-synthesis: weight;
-	--gara: 'EB Garamond', 'Adobe Garamond Pro';
+	--gara-for-chrome: 'EB Garamond', 'Adobe Garamond Pro';	/*needed for chrome 75 @font-face bug*/
 	--pala: Palatino, 'Palatino Linotype';
-	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
+	--sy-song: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
 }
 
 .title {
 	text-align: center;
-	font-family: var(--gara), gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
+	font-family: var(--gara-for-chrome), gara, var(--pala), var(--sy-song), biaosong, 'Songti SC', serif;
 	font-weight: 600;
 	font-style: normal;
 }
 .text-center {
 	text-align: center;
-	font-family: var(--gara), gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: var(--gara-for-chrome), gara, var(--pala), var(--sy-song), 'Songti SC', '方正宋三简体', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .text {
 	text-align: justify;
-	font-family: var(--gara), gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: var(--gara-for-chrome), gara, var(--pala), var(--sy-song), 'Songti SC', '方正宋三简体', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .date {
 	text-align: right;
-	font-family: var(--gara), gara, var(--pala), fangsong-non-italic, var(--zh-serif);
+	font-family: var(--gara-for-chrome), gara, var(--pala), fangsong-non-italic, var(--sy-song), serif;
 	font-weight: 400;
 	font-style: italic;
 }
 .ui, nav{
-	font-family: system-ui;
+	font-family: Futura, 'Century Gothic', '微软雅黑', 'Microsoft Yahei UI', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 }
 footer {
 	text-align: center;
 	font-size: smaller;
-	font-family: system-ui;
+	font-family: Futura, 'Century Gothic', '微软雅黑 Light', 'Microsoft Yahei UI Light', sans-serif;
 	font-weight: 300;
 	font-style: normal;
 }
@@ -87,15 +96,18 @@ footer {
 	text-decoration: none;
 }
 pre code {
-	font-family: "Courier New", Courier, monospace;
+	text-align: justify;
+	font-family: 'Courier New', Courier, monospace, '思源黑体 HW', 'Noto Sans Mono CJK SC', '文泉驿等宽微米黑';
+	font-weight: 400;
+	font-variant-numeric: tabular-nums lining-nums slashed-zero;
 }
 
 table {
 	text-align: justify;
 	font-size: smaller;
-	font-family: "Noto Sans Mono CJK SC", "思源黑体 HW", serif;
+	font-family: '微软雅黑', 'Microsoft Yahei', '方正兰亭黑简体', sans-serif;
 	font-weight: 400;
-	font-variant-numeric: tabular-nums lining-nums;
+	font-variant-numeric: tabular-nums lining-nums slashed-zero;
 }
 table tr:first-child {
 	text-align: center;
