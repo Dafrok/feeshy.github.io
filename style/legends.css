@@ -12,10 +12,19 @@ a:hover {
 	color: #ffffff;
 }
 nav {
+	text-align: center;
+	vertical-align: middle;
 	width: calc(1.5em + 1.25vh);
 	height: calc(1.5em + 1.25vh);
 	border-radius: 50%;
 	background-color: RGBA(127,127,127,0.33);
+}
+footer {
+	color: #888888;
+	opacity: 0.25;
+}
+footer:hover {
+	opacity: 1;
 }
 
 @media print and (min-aspect-ratio: 4/3) {

@@ -29,55 +29,64 @@
 }
 
 :root {
-	line-height: calc(1.2em + 1.5vh);	
-	font-variant: discretionary-ligatures, oldstyle-nums;
+	line-height: calc(1.2rem + 1.5vh);	
+	font-variant: discretionary-ligatures oldstyle-nums;
 	font-synthesis: weight;
+	--gara: 'EB Garamond', 'Adobe Garamond Pro';
 	--pala: Palatino, 'Palatino Linotype';
 	--zh-serif: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', source-han-serif-sc;
 }
 
 .title {
 	text-align: center;
-	font-family: gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
+	font-family: var(--gara), gara, var(--pala), var(--zh-serif), 'Songti SC', '华文中宋', STZhongsong, '方正姚体', serif;
 	font-weight: 600;
 	font-style: normal;
 }
 .text-center {
 	text-align: center;
-	font-family: gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: var(--gara), gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .text {
 	text-align: justify;
-	font-family: gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
+	font-family: var(--gara), gara, var(--pala), var(--zh-serif), '方正宋三简体', 'Songti SC', '华文宋体', STSong, serif;
 	font-weight: 400;
 	font-style: normal;
 }
 .date {
 	text-align: right;
-	font-family: gara, var(--pala), '华文仿宋', STFangSong, '仿宋', fangsong, var(--zh-serif);
+	font-family: var(--gara), gara, var(--pala), '华文仿宋', STFangSong, '仿宋', fangsong, var(--zh-serif);
 	font-weight: 400;
 	font-style: italic;
 }
-.ui, nav {
-	text-align: center;
+.ui, nav{
 	font-family: system-ui;
 	font-weight: 400;
 	font-style: normal;
-	line-height: calc(1.5em + 1.25vh);
+}
+footer {
+	text-align: center;
+	font-size: smaller;
+	font-family: system-ui;
+	font-weight: 300;
+	font-style: normal;
 }
 
-code {
+.title a, .ui a, nav a, footer a {
+	text-decoration: none;
+}
+pre code {
 	font-family: "Courier New", Courier, monospace;
 }
 
 table {
 	text-align: justify;
 	font-size: smaller;
-	font-family: "Noto Sans Mono CJK SC", "思源黑体 HW", "文泉驿等宽微米黑", monospace;
+	font-family: "Noto Sans Mono CJK SC", "思源黑体 HW", serif;
 	font-weight: 400;
-	font-variant-numeric:tabular-nums, lining-nums;
+	font-variant-numeric: tabular-nums lining-nums;
 }
 table tr:first-child {
 	text-align: center;

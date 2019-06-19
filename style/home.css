@@ -5,8 +5,17 @@
 }
 a {
 	color: #222222;
-	text-decoration:none;
 }
 a:hover {
-	color: #444444;
+	color: #888888;
+}
+nav {
+	text-align: right;
+}
+footer {
+	color: #888888;
+	opacity: 0;
+}
+footer:hover {
+	opacity: 1;
 }
