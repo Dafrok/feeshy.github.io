@@ -60,6 +60,8 @@ table {
 	text-align: center;
 	vertical-align: middle;
 	overflow: auto;
+	border: thin #666666 solid;
+	border-spacing: 0;
 }	@media (max-width: 480px) {
 	table {
 	margin-left: -10%;
@@ -68,7 +70,7 @@ table tr:first-child {
 	text-align: center; }
 td {
 	padding:0.25em 0.5em 0.25em 0.5em;
-	border:thin #888888 dotted; 
+	border:thin #bcbcbc dotted; 
 }
 
 /* print style*/
