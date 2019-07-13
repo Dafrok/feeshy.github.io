@@ -1,7 +1,7 @@
 ﻿/* vertical */
 
 :root {
-	line-height: calc(1.2rem + 1.5vh); }
+	line-height: calc(1.2em + 1.5vh); }
 body {
 	margin: 5vh auto;
 }
