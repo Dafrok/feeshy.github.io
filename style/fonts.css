@@ -69,7 +69,7 @@ table {
 	font-size: smaller;
 	font-variant-numeric: tabular-nums lining-nums slashed-zero;
 }
-table tr:first-child {
+th {
 	font-weight: 600;
 }
 

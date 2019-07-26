@@ -68,7 +68,7 @@ table {
 	width: 120%; }}
 table tr:first-child {
 	text-align: center; }
-td {
+th, td {
 	padding:0.25em 0.5em 0.25em 0.5em;
 	border:thin #bcbcbc dotted; 
 }
