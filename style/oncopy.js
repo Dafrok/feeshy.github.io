@@ -10,7 +10,6 @@ document.body.oncopy = event => {
 		+ copy + '\n'
 		+ '- - -\n'
 		+ 'Author: @feeshy \n'
-		+ 'License: CC BY-ND 4.0 \n'
 		+ url + '\n'
 		+ 'Snapshot on ' + d.toLocaleDateString() + '\n';
 	}
