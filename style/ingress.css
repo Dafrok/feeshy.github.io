@@ -1,0 +1,26 @@
+﻿:root {
+	background-color: #000000;
+	background-image: url("/style/real-carbon-fibre.png");
+	color: #ffffff;
+}
+a { color: #ffffff; }
+a:hover { color: #EBBC4A; }
+nav {
+	text-align: center;
+	vertical-align: middle;
+	width: calc(1.5em + 1.25vh);
+	height: calc(1.5em + 1.25vh);
+	border-radius: 50%;
+	background-color: RGBA(255,255,255,0.25);
+}
+footer {
+	color: #cccccc;
+	opacity: 0.25;
+}
+footer:hover {
+	opacity: 1;
+}
+
+/* fonts */
+.res { color:#00C2FF; font-variant: tabular-nums; }
+.enl { color:#28F428; font-variant: tabular-nums; }
