@@ -4,8 +4,8 @@ document.body.oncopy = event => {
 	event.preventDefault();
 	var copy = window.getSelection(0).toString();
 	var copied;
-	if (copy.length > 28) {
-		copied = document.title + '\n' 
+	if (copy.length > 35) {
+		copied = '#' + document.title + '\n' 
 		+ '- - -\n'
 		+ copy + '\n'
 		+ '- - -\n'

@@ -43,6 +43,9 @@
 	font-weight: 600;
 	font-style: normal;
 }
+h1, h2, h3 {
+	font-feature-settings: 'swsh';
+}
 .text, .text-center {
 	font-family: var(--old-serif), var(--song), '方正宋三简体', '华文宋体', STSong, serif;
 	font-weight: 400;
@@ -52,7 +55,6 @@
 	font-family: var(--old-serif), fangsong-non-italic, var(--song), serif;
 	font-weight: 400;
 	font-style: italic;
-	font-feature-settings: 'swsh';
 }
 
 /* sans-serif */

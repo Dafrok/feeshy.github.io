@@ -33,6 +33,9 @@ body {
 }
 nav {
 	right: 5%; }
+hr {
+	width: 33%;
+	border-top: thin dashed gray;}
 footer {
 	margin: auto;
 	min-width:18rem;
@@ -60,7 +63,7 @@ table {
 	text-align: center;
 	vertical-align: middle;
 	overflow: auto;
-	border: thin #666666 solid;
+	border: thin gray solid;
 	border-spacing: 0;
 }	@media (max-width: 480px) {
 	table {
@@ -70,7 +73,7 @@ table tr:first-child {
 	text-align: center; }
 th, td {
 	padding:0.25em 0.5em 0.25em 0.5em;
-	border:thin #bcbcbc dotted; 
+	border:thin lightgray dotted; 
 }
 
 /* print style*/
