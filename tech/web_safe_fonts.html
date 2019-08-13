@@ -121,7 +121,10 @@ p {
 	<hr />
 	
 	<section style="font-family:sans-serif">
-		<h3>IV 简体中文黑体</h3>	
+		<h3>IV 简体中文黑体</h3>
+		<p>黑体一般不需要特别声明具体字体。</p>
+		<p>苹果生态默认的苹方和 Android 默认的 Noto Sans 都是很好的选择。</p>
+		<p>唯一需要注意的是，某些版本的 Windows 可能会把 sans-serif 回落到中易宋体，因此最好在通用类前声明一个微软雅黑。</p>
 		<p style="font-family:'微软雅黑', 'Microsoft Yahei', 'Microsoft Yahei UI'"><a href="javascript:void(0);" onclick="yahei()">
 			[Win] 微软雅黑 / <span style="font-family:'微软雅黑 Light', 'Microsoft Yahei Light', 'Microsoft Yahei UI Light'">微软雅黑 Light</span></a><br />
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Microsoft_YaHei.svg/300px-Microsoft_YaHei.svg.png" id="yahei" style="display: none;"><br />
@@ -171,6 +174,9 @@ p {
 	
 	<section style="font-family:serif">
 		<h3>V 简体中文宋体</h3>
+		<p>随着视网膜屏的普及，屏幕与印刷的精度差距有所减小。宋体作为传统的中文正文字体，也开始慢慢回潮。</p>
+		<p>然而，2019年的各大操作系统，要么压根就没有内置宋体，即使有也是内置的质量过时的老旧字体。因此网页上的宋体使用 Web Font 几乎是不可避免的。</p>
+		<p>从易得性和功能性上来说，思源宋体可以说是目前宋体 Web Font 的最佳选择。声明 font-family 时可以在思源宋体后面同时声明一些常见的宋体，作为浏览器下载字体时的fallback。</p>
 		<p style="font-family:SimSun, SimSun-ExtB, '宋体', nsimsum, '新宋体'">
 			[Win] 中易宋体 / 新宋体<br /><br />
 			饱受诟病的 Windows 平台默认简中衬线体，且为 Windows XP 之前的简中系统默认字体。这个远古字体的屏幕显示效果极差。
@@ -199,6 +205,9 @@ p {
 	
 	<section style="font-family:fangsong">
 		<h3>VI 简体中文仿宋</h3>
+		<p>仿宋和楷体常常用来搭配西文的斜体使用</p>
+		<p>可惜的是 chrome 还不支持禁用字体合成，导致中西文混排时非常容易出现仿宋跟着西文一齐倾斜的情况</p>
+		<p>一种折中的方法是 用@font face 把仿宋/楷体的中文字体声明为斜体，浏览器便不会合成伪斜体了</p>
 		<p style="text-indent:0">虽然 CSS 允许把 fangsong 设置为 font-family 的通用字族，然而实际上，mac / iOS / Android 都没有预装可供回落的仿宋字体——我为这段话声明了仿宋，但你所看到的很可能仍然是系统默认的黑体。</p>
 		<p style="font-family:'simfang', '仿宋', '仿宋_GB2312'">
 			[Win] 中易仿宋 <br /><br />
