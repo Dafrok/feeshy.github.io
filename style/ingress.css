@@ -22,5 +22,7 @@ footer:hover {
 }
 
 /* fonts */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,400i,700&display=fallback');
+:root { font-family:"exo", "trebuchet ms", '微软雅黑', 'Microsoft Yahei UI', 'Lantinghei SC', sans-serif;}
 .res { color:#00C2FF; font-variant: tabular-nums; }
 .enl { color:#28F428; font-variant: tabular-nums; }
