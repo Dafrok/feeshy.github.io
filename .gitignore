@@ -1,8 +1,6 @@
 # original texts
 *.md
 *.rtf
-*.doc
-*.pdf
 
 # windows system file
 desktop.ini
