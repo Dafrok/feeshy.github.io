@@ -1,0 +1,25 @@
+﻿:root {
+	background-color: #fcfcfc;
+	background-image: url("/style/natural-paper.png");
+	color: #222222;
+}
+a {
+	color: #222222;
+}
+a:hover {
+	color: #888888;
+}
+nav {
+	text-align: center;
+	vertical-align: middle;
+	height: calc(1.5em + 1.25vh);
+	border-radius: 50%;
+	background-color: RGBA(255,255,255,0.5);
+}
+footer {
+	color: #888888;
+	opacity: 0.25;
+}
+footer:hover {
+	opacity: 1;
+}
