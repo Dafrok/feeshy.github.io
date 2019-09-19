@@ -66,9 +66,8 @@ h1, h2, h3 {
 @media (max-device-width:480px){
 	.ui, nav {font-size:larger;}
 }
-table {
+th,td {
 	font-family: '微软雅黑', 'Microsoft Yahei UI', 'Lantinghei SC', sans-serif;
-	font-weight: 400;
 	font-style: normal;
 	font-size: smaller;
 	font-variant-numeric: tabular-nums lining-nums slashed-zero;
