@@ -28,7 +28,7 @@ body>div.title,div.text,div.text-center {
 /* horizontal */
 
 body {
-	width: 32rem;
+	width: 35rem;
 	max-width: 80%;
 }
 nav {
@@ -59,21 +59,26 @@ nav img, footer img {
 
 table {
 	margin: auto;
-	width: 100%;
 	text-align: center;
 	vertical-align: middle;
 	overflow: auto;
-	border: thin gray solid;
+	border: #222222;
+	border-style: solid hidden;
 	border-spacing: 0;
 }	@media (max-width: 480px) {
 	table {
-	margin-left: -10%;
-	width: 120%; }}
-table tr:first-child {
-	text-align: center; }
+	width: 120%;
+	margin-left: -10%;	}}
+table tr:first-child th, table tr:first-child td{
+	text-align: center;
+	border: thin #222222;
+	border-style: solid hidden;
+}
 th, td {
-	padding:0.25em 0.5em 0.25em 0.5em;
-	border:thin lightgray dotted; 
+	line-height: 1.25em;
+	padding: 0.25em 0.5em;
+	border: thin lightgray;
+	border-style: dotted hidden; 
 }
 
 /* print style*/
