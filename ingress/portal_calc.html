@@ -1,31 +1,30 @@
 ﻿<!DOCTYPE html>
 <html lang="en-us">
-
 <head>
 <meta content="en-us" http-equiv="Content-Language">
 <meta charset=utf-8 />
 <meta name="viewport" content="width=device-width, viewport-fit=cover" />
-<title>Calculators for Ingress</title>
+
+<title>Calculator for Ingress</title>
 <meta property="og:type" content="article" />
 <meta property="og:description" content="" />
 <meta property="og:image" content="" />
+
 <link rel="stylesheet" href="/style/layout.css" />
 <link rel="stylesheet" href="/style/ingress.css" />
 <style>
-body {width:25em;}
-span {float:left;}
-section:not(span) {clear:both;}
-select,button {color:#ffffff; border:solid 1px #59FBEA; margin:0 0.25em;}
-select {background-color:#0c0c0c;}
-button {background-color:#004F4A; font-family:Exo, "Trebuchet MS", sans-serif;}
-select:focus, select:hover {border-color:#EBBC4A;}
-button:focus, button:hover {background-color:#0F2225; border-color:#EBBC4A;}
-@media (min-device-width: 800px) {
-	#preset {font-size:smaller;}
-}
+	body {width:25rem;}
+	select, button {color:#ffffff; border:solid 1px #59FBEA; margin:0 0.25em;}
+	select {background-color:#0c0c0c;}
+	button {background-color:#004F4A; font-family:Exo, "Trebuchet MS", sans-serif;}	
+	select:focus, select:hover {border-color:#EBBC4A;}
+	button:focus, button:hover {background-color:#0F2225; border-color:#EBBC4A;}
+/*	responsive ui	*/
 @media (max-device-width: 480px) {
 	select, button {font-size:125%;}
 }
+	.float {float:left;}
+	:not(.float) {clear:both;}
 </style>
 </head>
 
@@ -36,49 +35,45 @@ There is a <a href="https://docs.google.com/spreadsheets/d/1k7E8HFnY7CE5r2mdPsAd
 <hr>
 <div id="range">
 	<h2>Portal Range Calculator</h2>
+	
 	<section><h3>Resonators</h3>
-		<span>
-			<select id="Res1"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res2"><option value="8">8</option><option value="7" selected>7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res3"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res4"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select></span><span><select id="Res5"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><<option hidden selected></option></select><select id="Res6"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res7"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res8"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select>
-		</span>
-	</section>
-	<section id="preset">
-		Quick Select by Players&nbsp;👇<br><span><button>L8x1</button><button>L8x2</button></span><span><button>L8x3</button><button>L8x1+L7x1</button></span>
-		<p>&nbsp;</p>
-	</section>
+		<form id="res">
+			<span class="float"><select id="Res1"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res2"><option value="8">8</option><option value="7" selected>7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res3"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res4"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select></span><span class="float"><select id="Res5"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><<option hidden selected></option></select><select id="Res6"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res7"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select><select id="Res8"><option value="8">8</option><option value="7">7</option><option value="6">6</option><option value="5">5</option><option value="4">4</option><option value="3">3</option><option value="2">2</option><option value="1">1</option><option hidden selected></option></select></span>
+		</form>
+		<p id="preset">Quick Select by Players&nbsp;👇<br>
+			<span class="float"><button>L8x1</button><button>L8x2</button></span><span class="float"><button>L8x3</button><button>L8+L7</button></span>
+		</p><br>
 		<!--script>
-			a { color: #EBBC4A; }
-		</script-->
+/*			点击 button 可以产生快速选择上面表单的效果
+			L8x1:
+				#Res1=8, #Res2=7, #Res3=6, #Res4=6, #Res5=5, #Res6=5, #Res7=4, #Res8=4;
+			L8x2:
+				#Res1=8, #Res2=8, #Res3=7, #Res4=7, #Res5=6, #Res6=6, #Res7=6, #Res8=6;
+			L8x3:
+				#Res1=8, #Res2=8, #Res3=8, #Res4=7, #Res5=7, #Res6=7, #Res7=6, #Res8=6;
+			L8+L7:
+				#Res1=8, #Res2=7, #Res3=7, #Res4=6, #Res5=6, #Res6=6, #Res7=6, #Res8=5;
+*/		</script-->
+	</section>
+	
 	<section><h3>Mods</h3>
-		<span><select id="Mod1"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="1" selected></option></select><select id="Mod2"><option value="1.75">VRLA</option><option value="1.25">SBUL</option><option value="0.5">LA</option><option value="0" selected></option></select></span><span><select id="Mod3"><option value="0.875">VRLA</option><option value="0.625">SBUL</option><option value="0.25">LA</option><option value="0" selected></option></select><select id="Mod4"><option value="0.875">VRLA</option><option value="0.625">SBUL</option><option value="0.25">LA</option><option value="0" selected></option></select></span>
+		<form id="mod"><span class="float"><select id="Mod1"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="1" selected></option></select><select id="Mod2"><option value="1.75">VRLA</option><option value="1.25">SBUL</option><option value="0.5">LA</option><option value="0" selected></option></select></span><span class="float"><select id="Mod3"><option value="0.875">VRLA</option><option value="0.625">SBUL</option><option value="0.25">LA</option><option value="0" selected></option></select><select id="Mod4"><option value="0.875">VRLA</option><option value="0.625">SBUL</option><option value="0.25">LA</option><option value="0" selected></option></select></span></form>
 		<!--script>
-			Mod1缺省时不允许选择Mod2~Mod4
-			Mod2缺省时不允许选择Mod3~Mod4
-			Mod3缺省时不允许选择Mod4
-		</script-->
-		</section>
-	<section>
-		<p style="font-size:smaller;"><i>Please select any VRLAs before SBULs, and any SBULs before LAs. Other orders will cause wrong results.</i></p>
+/*		限制选择：	
+			当#Mod1缺省时，不允许选择#Mod2~#Mod4
+			当#Mod2缺省时，不允许选择#Mod3~#Mod4
+			当#Mod3缺省时，不允许选择#Mod4
+*/		</script-->
+		<p style="font-size:smaller;"><i>* Please select any VRLAs before SBULs, and any SBULs before LAs. Other orders will cause wrong results.</i></p>
 	</section>
+	
 	<p style="text-align:center;"><button style="font-size:150%;">Calculate</button></p>
-	<!--script>range
-		=INT{160*{[SUM(Res1:Res8)/8]^4}*[SUM(Mod1:Mod4)]}/1000
-	</script-->
-	<p>The range is <u id="range" style="">&nbsp;&nbsp;&nbsp;</u> km.</p>
-</div>
-<hr>
-<div id="farm">
-	<h2>Farm Calculator</h2>
-	<section><h3>Heat Sinks</h3>
-		<span><select id="HS1"><option value="">Very Rare</option><option value="">Rare</option><option value="">Common</option><option value="" selected></option></select><select id="HS2"><option value="">Very Rare</option><option value="">Rare</option><option value="">Common</option><option value="" selected></option></select></span>
-	</section>
-	<section><h3>Multi Hacks</h3>
-		<span><select id="MH1"><option value="">Very Rare</option><option value="">Rare</option><option value="">Common</option><option value="" selected></option></select><select id="MH2"><option value="">Very Rare</option><option value="">Rare</option><option value="">Common</option><option value="" selected></option></select></span>
-	</section>
-		<button>Calculate</button>
 	<!--script>
-	</script-->
-	<p>
-	You can hack the portal for <u id="times">&nbsp;&nbsp;&nbsp;</u> times in <u id="burn-out">&nbsp;&nbsp;&nbsp;</u>.</p>
+/*		获取#Res1~#Res8、#Mod1~#Mod4的值，计算
+		range=INT{160*{[SUM(Res1:Res8)/8]^4}*[SUM(Mod1:Mod4)]}/1000
+		用结果替换下方 #range 原有的文本
+*/	</script-->
+	<p>The range is <u id="range">&nbsp;&nbsp;&nbsp;</u> km.</p>
 </div>
 <br><br><br>
 <nav class="ui">
@@ -89,90 +84,6 @@ There is a <a href="https://docs.google.com/spreadsheets/d/1k7E8HFnY7CE5r2mdPsAd
 	fork this project on <a href='https://github.com/feeshy/ingress_calc_html' target='_blank'>github</a><br>
 	NOT associated with Niantic or Ingress.
 </footer>
-<!--script>
-/*Thanks to https://ingress.tools/*/
-function calculateDistance() {
-
-    var numRes = $('.portalResSlot.slotFilled').length;
-    if (numRes == 8) {
-        var totalLevels = 0;
-        $('.portalResSlot.slotFilled').each(function () {
-            var slotLevel = $(this).attr('data-res-level');
-            totalLevels = totalLevels + parseInt(slotLevel);
-        });
-        var avgLevel = (totalLevels / 8);
-        var distance = Math.pow(avgLevel, 4) * 160;
-        var linkAmpFactor = linkAmpMultiplier();
-        distance = distance * linkAmpFactor;
-        $('#maxLinkDistance').text((distance).toFixed(1) + ' meters');
-        if (distance > 2000) {
-            $('#maxLinkDistance').text((distance / 1000).toFixed(1) + 'km');
-        }
-
-    }
-}
-
-function calculateLinkAmpMultipliers() {
-    var numLamps = $('.portalModSlot.slotFilled').length;
-    if (numLamps > 0) {
-        var numLampsMultiplied = 0;
-        var numLinkAmpsRare = $('.portalModSlot.slotFilled.itemLinkAmpRare').length;
-        var numLinkAmpsSoftBank = $('.portalModSlot.slotFilled.itemLinkAmpSoftBank').length;
-        var numLinkAmpsVeryRare = $('.portalModSlot.slotFilled.itemLinkAmpVeryRare').length;
-        if (numLinkAmpsVeryRare > 0) {
-            $('.portalModSlot.slotFilled.itemLinkAmpVeryRare').each(function () {
-                numLampsMultiplied = numLampsMultiplied + 1;
-                var positionFactor = linkAmpPositionFactor(numLampsMultiplied);
-                var linkedAmpMultiFactor = positionFactor * 7;
-                $(this).attr('data-link-amp-multiplier', linkedAmpMultiFactor)
-            });
-        }
-        if (numLinkAmpsSoftBank > 0) {
-            $('.portalModSlot.slotFilled.itemLinkAmpSoftBank').each(function () {
-                numLampsMultiplied = numLampsMultiplied + 1;
-                var positionFactor = linkAmpPositionFactor(numLampsMultiplied);
-                var linkedAmpMultiFactor = positionFactor * 5;
-                $(this).attr('data-link-amp-multiplier', linkedAmpMultiFactor)
-            });
-        }
-        if (numLinkAmpsRare > 0) {
-            $('.portalModSlot.slotFilled.itemLinkAmpRare').each(function () {
-                numLampsMultiplied = numLampsMultiplied + 1;
-                var positionFactor = linkAmpPositionFactor(numLampsMultiplied);
-                var linkedAmpMultiFactor = positionFactor * 2;
-                $(this).attr('data-link-amp-multiplier', linkedAmpMultiFactor)
-            });
-        }
-    }
-}
-
-function linkAmpPositionFactor(position) {
-    var multiplier = 1;
-    if (position == 2) {
-        multiplier = 0.5
-    }
-    else if (position == 3) {
-        multiplier = 0.125
-    }
-    else if (position == 4) {
-        multiplier = 0.125
-    }
-    return multiplier;
-}
-
-function linkAmpMultiplier() {
-    calculateLinkAmpMultipliers();
-    var multiplier = 1;
-    var numLamps = $('.portalModSlot.slotFilled').length;
-    if (numLamps > 0) {
-        $('.portalModSlot.slotFilled').each(function () {
-            multiplier = multiplier + $(this).data('link-amp-multiplier')
-        });
-    }
-    return multiplier;
-}
-
-</script-->
 </body>
 
 </html>
