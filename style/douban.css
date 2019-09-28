@@ -10,11 +10,6 @@ a:hover {
 	color: #888888;
 }
 nav {
-	text-align: center;
-	vertical-align: middle;
-	width: calc(1.5em + 1.25vh);
-	height: calc(1.5em + 1.25vh);
-	border-radius: 50%;
 	background-color: RGBA(255,255,255,0.5);
 }
 footer {

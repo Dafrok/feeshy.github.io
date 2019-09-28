@@ -1,7 +1,7 @@
 ﻿:root {
 	font-synthesis: weight;
 	font-variant: discretionary-ligatures oldstyle-nums;
-	--old-serif: 'EB Garamond', 'Adobe Garamond Pro', ebg-vf, ebgara, 'Palatino', 'Palatino Linotype';
+	--old-serif: 'EB Garamond', ebg-vf, ebgara, 'Adobe Garamond Pro', 'Palatino', 'Palatino Linotype';
 	--song: '思源宋体', 'Source Han Serif SC', 'Noto Serif CJK SC', '思源宋体 CN', 'Source Han Serif CN', 'Noto Serif SC', 'Songti SC';
 }
 
@@ -25,7 +25,7 @@
 /* Web Font Face */
 
 /* EBGaramond Legacy */
-@font-face{font-family:ebg;font-style:normal;font-weight:400;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG12-Regular.woff) format('woff');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}@font-face{font-family:ebg;font-style:italic;font-weight:400;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG12-Italic.woff) format('woff');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}@font-face{font-family:ebg;font-style:normal;font-weight:600;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-SemiBold.woff2) format('woff2');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}
+@font-face{font-family:ebgara;font-style:normal;font-weight:400;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG12-Regular.woff) format('woff');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}@font-face{font-family:ebgara;font-style:italic;font-weight:400;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG12-Italic.woff) format('woff');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}@font-face{font-family:ebgara;font-style:normal;font-weight:600;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-SemiBold.woff2) format('woff2');unicode-range:U+0020-007f,U+00a0-00ff,U+0370-03ff,U+20a0-20bf,U+2100-214f,U+2150-217f,U+2200-22ef,U+2474-24b5,U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}
 
 /* EBGaramond Variable Font */
 @font-face{font-family:ebg-vf;font-style:normal;font-weight:400 800;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-VF-basic.woff2) format('woff2-variations');unicode-range:U+0020-007f,U+00a0-00ff}@font-face{font-family:ebg-vf;font-style:normal;font-weight:400 800;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-VF-suppl.woff2) format('woff2-variations');unicode-range:U+0370-03ff,U+20a0-20bf,U+2100-214f}@font-face{font-family:ebg-vf;font-style:normal;font-weight:400 800;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-VF-num.woff2) format('woff2-variations');unicode-range:U+2150-217f,U+2200-22ef,U+2474-24b5}@font-face{font-family:ebg-vf;font-style:normal;font-weight:400 800;font-display:swap;src:url(/resources/OpenFont/EBGaramond/EBG-VF-symb.woff2) format('woff2-variations');unicode-range:U+25a0-25a1,U+25b2-25b3,U+25b6-25b7,U+25bc-25bd,U+25c0-25c1,U+25c7-25c7,U+25ca,U+2619,U+2766-2767,U+e001-e002}
@@ -74,7 +74,6 @@ th, td {
 th, td:only-child {
 	font-weight: 600;
 }
-
 footer {
 	font-family: '微软雅黑 Light', 'Microsoft Yahei UI Light', 'Lantinghei SC Extralight', sans-serif;
 	font-weight: 300;
@@ -84,7 +83,7 @@ footer {
 
 /* monospace */
 pre code {
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Ubuntu Mono', Monaco, 'Lucida Console', monospace;
 	font-weight: 400;
 	font-variant-numeric: tabular-nums lining-nums slashed-zero;
 }

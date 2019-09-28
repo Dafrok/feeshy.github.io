@@ -3,7 +3,6 @@
 	background-image: url("/style/black-paper.png");
 	color: #eeeeee;
 }
-
 a {
 	color: #eeeeee;
 	text-decoration: none;
@@ -12,11 +11,6 @@ a:hover {
 	color: #ffffff;
 }
 nav {
-	text-align: center;
-	vertical-align: middle;
-	width: calc(1.5em + 1.25vh);
-	height: calc(1.5em + 1.25vh);
-	border-radius: 50%;
 	background-color: RGBA(127,127,127,0.33);
 }
 footer {
@@ -28,8 +22,4 @@ footer:hover {
 }
 
 @media print and (min-aspect-ratio: 4/3) {
-	body {
-		width: 95%;
-		column-count: 2;
-		column-gap: 5%;
-}}
+	body { width: 95%; column-count: 2; column-gap: 5%; } }

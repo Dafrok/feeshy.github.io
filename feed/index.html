@@ -20,6 +20,8 @@
 <link rel="stylesheet" href="/style/home.css" />
 <link rel="stylesheet" href="/style/fonts.css" />
 <style>
+nav { width:auto; background:none; }
+footer{	opacity: 0;}
 nav > a { color: #8f8f8f; }
 a > img { filter: grayscale(100%); }
 </style>
@@ -77,7 +79,7 @@ function qr_event() {
 	else {
 		qr="display: none;";
 		document.getElementById("mp_qr").style.cssText=qr;
-		document.getElementById("mp_descrip").innerHTML="<img src='/resources/wechat.ico' alt='订阅号' height=16 />";
+		document.getElementById("mp_descrip").innerHTML="<img src='https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico' alt='订阅号' height=16 />";
 	}
 }
 </script>

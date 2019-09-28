@@ -10,7 +10,8 @@ a:hover {
 	color: #888888;
 }
 nav {
-	text-align: right;
+	width: auto;
+	background-color: none;
 }
 footer {
 	color: #888888;

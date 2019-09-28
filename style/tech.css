@@ -1,32 +1,10 @@
-﻿/* vertical */
+﻿
+/* body */
 
 :root {
 	line-height: calc(1.2em + 1.5vh); }
 body {
 	margin: 5vh auto;
-}
-nav {
-	position: fixed;
-	z-index: 999;
-	bottom: 5vh; }
-nav#top {
-	top: 5vh; }
-nav, footer {
-	vertical-align: middle;
-}
-body>div.title,div.text,div.text-center {
-	min-height: calc(87.5vh - 1.2rem - 1.5vh); }
-
-@media (min-height: 480px) {
-	body>:not(nav) {
-		transform: translateY(calc(100vh / 3 - 160px)); }
-	body>div.title, body>div.text, body>div.text-center {
-		min-height: calc(87.5vh - 100vh / 3 + 160px - 1.2rem - 1.5vh); }
-}
-
-/* horizontal */
-
-body {
 	width: 1440px;
 	max-width: 80%;
 }
@@ -35,16 +13,6 @@ p, ul, ol, q, blockquote, pre code {
 	margin-left:auto;
 	margin-right:auto;
 }
-nav {
-	right: 5%; }
-hr {
-	width: 33%;
-	border-top: thin dashed gray;}
-footer {
-	margin: auto;
-	min-width:18rem;
-	max-width:350px;
-}
 .text, pre code {
 	text-align: justify; }
 .title, h1, h2, .text-center, footer {
@@ -52,14 +20,53 @@ footer {
 .date {
 	text-align: right;
 }
+
+/* ui */
+
+nav {
+	position: fixed;
+	z-index: 999;
+	bottom: 5vh;
+	right: 5%;
+	width: calc(1.5em + 1.25vh);
+	height: calc(1.5em + 1.25vh);
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+nav#top {
+	top: 5vh;
+}
+footer {
+	margin: auto;
+	min-width:18rem;
+	max-width:350px;
+}
+body>div.title,div.text,div.text-center {
+	min-height: calc(87.5vh - 1.2rem - 1.5vh);
+}
+@media (min-height: 480px) {
+	body>:not(nav) { transform: translateY(calc(100vh / 3 - 160px)); }
+	body>div.title, body>div.text, body>div.text-center { min-height: calc(87.5vh - 100vh / 3 + 160px - 1.2rem - 1.5vh); }
+}
+hr {
+	width: 33%;
+	border-top: thin dashed gray;
+}
+
+/* img */
+
 iframe, img {
 	display: block;
 	margin: auto;
-	max-width: 100%; }
+	max-width: 100%;
+}
 nav img, footer img {
 	display: inline;
 	height: 1em;
 }
+
+/* table */
 
 table {
 	margin: auto;
@@ -99,11 +106,6 @@ a:hover {
 	color: #888888;
 }
 nav {
-	text-align: center;
-	vertical-align: middle;
-	width: calc(1.5em + 1.25vh);
-	height: calc(1.5em + 1.25vh);
-	border-radius: 50%;
 	background-color: RGBA(225,225,225,0.5);
 }
 footer {
@@ -114,10 +116,7 @@ footer:hover {
 	opacity: 1;
 }
 @media print {
-	body {
-		color: #000000;
-		background: #ffffff;
-	}
-	nav {display: none;}
-	footer {opacity: 1;}
+	body { color: #000000; background: #ffffff; }
+	nav { display: none; }
+	footer { opacity: 1; }
 }

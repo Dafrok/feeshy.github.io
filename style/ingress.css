@@ -1,28 +1,19 @@
-﻿:root {
-	background-color: #000000;
-	background-image: url("/style/real-carbon-fibre.png");
-	color: #ffffff;
-}
+﻿:root { background-color: #000000; background-image: url("/style/real-carbon-fibre.png"); color: #ffffff; }
 a { color: #ffffff; }
 a:hover { color: #EBBC4A; }
-nav {
-	text-align: center;
-	vertical-align: middle;
-	width: calc(1.5em + 1.25vh);
-	height: calc(1.5em + 1.25vh);
-	border-radius: 50%;
-	background-color: RGBA(255,255,255,0.25);
-}
-footer {
-	color: #cccccc;
-	opacity: 0.25;
-}
-footer:hover {
-	opacity: 1;
-}
+nav { background-color: RGBA(255,255,255,0.25); }
+footer { color: #cccccc; opacity: 0.25; }
+footer:hover { opacity: 1; }
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Exo:400,400i,700&display=fallback');
-:root { font-family:"exo", "trebuchet ms", '微软雅黑', 'Microsoft Yahei UI', 'Lantinghei SC', sans-serif;}
+:root, button, select { font-family:"exo", "trebuchet ms", sans-serif; }
 .res { color:#00C2FF; font-variant: tabular-nums; }
 .enl { color:#28F428; font-variant: tabular-nums; }
+
+/* ui */
+select, button { color:#ffffff; border:solid 1px #59FBEA; margin:0 0.25em; }
+select { background-color:#0c0c0c; }
+button { background-color:#004F4A; }
+select:focus, select:hover { border-color:#EBBC4A; }
+button:focus, button:hover { background-color:#0F2225; border-color:#EBBC4A; }
