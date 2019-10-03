@@ -1,0 +1,53 @@
+<html lang="zh-cn">
+
+<head>
+<meta charset=utf-8 />
+<meta name="viewport" content="width=device-width, viewport-fit=cover" />
+<title>将路由器用作无线AP</title>
+<meta property="og:type" content="article" />
+<meta property="og:description" content="收拾闲置翻到一台吃灰的无线路由，准备发挥余热扩展一下信号覆盖。然而这台路由器自带的无线中继模式居然会建立一个新的局域网，会给跨设备分享带来非常大的不便。那么有没有可能让两台路由器工作在同一个局域网呢？" />
+<link rel="stylesheet" href="/style/tech.css" />
+<link rel="stylesheet" href="/style/fonts.css" />
+<style>
+</style>
+</head>
+
+<body>
+
+<div class="text">
+	<p>搬家后，家里一直有那么一两处WiFi覆盖的死角。今天收拾闲置，翻到一台吃灰的无线路由。遂打算让它发挥余热，扩展一下WiFi信号的覆盖。</p>
+	<p>接上电，发现这台路由器所谓的无线中继并不是我们通常所理解的中继，而是在原有无线局域网下建立一个新的局域网——这将给跨设备分享带来非常大的不便。那么有没有可能让两台无线路由器工作在同一个局域网呢？</p>
+	<p>还是有办法的。我们只需要停用第二台路由器的路由功能，借助装修时预留在墙里的网线，使其作为一个提供无线信号的Hub（AP）工作：</p>
+	<ol>
+		<li>连接到第一台路由器（用来访问外网的那台）</li>
+			<ul>
+				<li>记录路由器管理页的IP地址（一般是192.168.1.1）</li>
+			</ul>
+		<li>连接到第二台路由器（用做无线AP的那台）</li>
+			<ul>
+				<li>记录LAN口MAC地址</li>
+				<li>将LAN口IP设定为与第一台路由器同一网段，且不冲突的地址（例如192.168.1.2）</li>
+			</ul>
+		<li>再次连接到第一台路由器</li>
+			<ul><li>将第二台路由器的MAC地址和IP地址填入第一台路由器的DHCP设定</li></ul>
+		<li>再连接到第二台路由器</li>
+			<ul>
+				<li>关闭DHCP</li>
+				<li>将SSID和密码设定为与第一台路由器相同</li>
+			</ul>
+		<li>最后，将两个路由器的LAN口用网线连接</li>
+	</ol>
+	<p>来到之前WiFi信号差的角落，用访问第一台路由器的管理页，现在这台无线设备已经显示为通过“网线”连接了。大功告成！</p>
+	<p><img src="/resources/img/mirouter.png" width="360px"></p>
+</div>
+
+<nav class="ui"><a href="./">&lt;</a></nav>
+
+<footer>
+	<a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' title="本分类下的内容采用 署名 4.0 协议共享">
+	<img src="/resources/cc.svg" alt="CC"><img src="/resources/by.svg" alt="BY"></a><br><br>
+</footer>
+<script src="/style/oncopy.js"></script>
+</body>
+
+</html>
