@@ -2,6 +2,7 @@
 a { color: #ffffff; }
 a:hover { color: #EBBC4A; }
 nav { background-color: RGBA(255,255,255,0.25); }
+hr { border: thin solid RGBA(255,255,255,0.25); }
 footer { color: #cccccc; opacity: 0.25; }
 footer:hover { opacity: 1; }
 

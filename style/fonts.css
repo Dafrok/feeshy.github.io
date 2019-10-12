@@ -51,6 +51,9 @@ h1, h2, h3 {
 	font-weight: 400;
 	font-style: normal;
 }
+.text>p:first-child:first-letter {
+	font-size: calc(2em + 1.5vh);
+}
 .date, q, blockquote {
 	font-family: var(--old-serif), fangsong-non-italic, var(--song), serif;
 	font-weight: 400;

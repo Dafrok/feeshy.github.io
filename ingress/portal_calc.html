@@ -40,9 +40,9 @@
 			</script>
 		</form><br>
 		<p id="preset">&nbsp;&nbsp;Presets👇<br>
-			<span class="float"><button onclick="quickSelect('L8x1');">L8x1</button><button onclick="quickSelect('L8x2');">L8x2</button></span><span class="float"><button onclick="quickSelect('L8x3');">L8x3</button><button onclick="quickSelect('L8x4');">L8x4</button></span><span class="float"><button onclick="quickSelect('L8x8');">L8x8</button><button onclick="quickSelect('L8+L7');">L8+L7</button></span>
+			<span class="float"><button onclick="resPreset('L8x1');">L8x1</button><button onclick="resPreset('L8x2');">L8x2</button></span><span class="float"><button onclick="resPreset('L8x3');">L8x3</button><button onclick="resPreset('L8x4');">L8x4</button></span><span class="float"><button onclick="resPreset('L8x8');">L8x8</button><button onclick="resPreset('L8+L7');">L8+L7</button></span>
 			<script>
-				function quickSelect(btn){
+				function resPreset(btn){
 					switch(btn){
 						case "L8x1":
 							res0.options[0].selected = true;
@@ -120,13 +120,50 @@
 				var mod2 = document.getElementById("mod2");
 				var mod3 = document.getElementById("mod3");
 			</script>
-		</form>
-	</section><br>
-	
-		<h3>Portal Range</h3>
-<!-- 	<p style="text-align:center;"><button style="font-size:150%;" onclick="calculate();">Calculate</button></p>
- -->
-		<p><u id="range">&nbsp;&nbsp;&nbsp;</u> km</p>
+		</form><br>
+		<p id="preset">&nbsp;&nbsp;Presets👇<br>
+			<span class="float"><button onclick="laPreset('LAx2');">LAx2</button><button onclick="laPreset('SBULx2');">SBULx2</button></span><span class="float"><button onclick="laPreset('LAx4');">LAx4</button><button onclick="laPreset('SBULx4');">SBULx4</button></span><span class="float"><button onclick="laPreset('Reset');">Reset</button></span>
+			<script>
+				function laPreset(btn){
+					switch(btn){
+						case "LAx2":
+							mod0.options[2].selected = true;
+							mod1.options[2].selected = true;
+							mod2.options[3].selected = true;
+							mod3.options[3].selected = true;
+							break;
+						case "SBULx2":
+							mod0.options[1].selected = true;
+							mod1.options[1].selected = true;
+							mod2.options[3].selected = true;
+							mod3.options[3].selected = true;
+							break;
+						case "LAx4":
+							mod0.options[2].selected = true;
+							mod1.options[2].selected = true;
+							mod2.options[2].selected = true;
+							mod3.options[2].selected = true;
+							break;
+						case "SBULx4":
+							mod0.options[1].selected = true;
+							mod1.options[1].selected = true;
+							mod2.options[1].selected = true;
+							mod3.options[1].selected = true;
+							break;
+						case "Reset":
+							mod0.options[3].selected = true;
+							mod1.options[3].selected = true;
+							mod2.options[3].selected = true;
+							mod3.options[3].selected = true;
+							break;
+					}
+					calculate();
+				}
+			</script>
+		</p><br>
+	</section><hr>
+	<section class="text-center">
+		<h3><u id="range">&nbsp;&nbsp;&nbsp;</u> km</h3>
 		<script>
 			function sortNumber(a,b) {
 					return b - a;
@@ -158,6 +195,7 @@
 			}
 			document.addEventListener("change", calculate);
 		</script>
+	</section>
 </div>
 
 <nav class="ui">
