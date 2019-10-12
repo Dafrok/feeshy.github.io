@@ -28,7 +28,7 @@
 		</tr>
 		<tr style="background-color:#eee;">
 			<td style="width: 30%" id="width"></td>
-			<td style="width: 70%">👈你此刻使用的设备</td>
+			<td style="width: 70%">👈你此刻使用的屏幕 (窗口)</td>
 		</tr>
 		<tr>
 			<td style="width: 30%">2560</td>
@@ -77,15 +77,14 @@
 	<script src="https://tysonmatanich.github.io/viewportSize/viewportSize.js"></script>
 	<script>
 		function writeWidth() {
-			if (viewportSize.getWidth() != screen.width) {
-			document.getElementById("width").innerHTML = viewportSize.getWidth() + " (" + screen.width + ")";
+			if (viewportSize.getWidth() == screen.width) {
+			document.getElementById("width").innerHTML = screen.width;
 		}	else {
-			document.getElementById("width").innerHTML = screen.width();
+			document.getElementById("width").innerHTML = screen.width + " (" + viewportSize.getWidth() + ")";
 		}}
 		window.addEventListener("load", writeWidth);
 		window.addEventListener("DOMContentLoaded", writeWidth);
 		window.addEventListener("resize", writeWidth);
-		window.addEventListener("orientationchange", writeWidth);
 	</script>
 </div>
 
