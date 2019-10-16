@@ -6,9 +6,9 @@
 <meta name="viewport" content="width=device-width, viewport-fit=cover" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<title>Calculator for Ingress</title>
+<title>Portal Calc</title>
 <meta property="og:type" content="article" />
-<meta property="og:description" content="an ingress calculator in web page" />
+<meta property="og:description" content="a portal range calculator for planning long distance links." />
 <link rel="stylesheet" href="/style/layout.css" />
 <link rel="stylesheet" href="/style/ingress.css" />
 <style>
@@ -113,7 +113,7 @@
 	
 	<section><h3>Mods</h3>
 		<form id="mod">
-			<span class="float"><select id="mod0"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0" selected></option></select><select id="mod1"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0" selected></option></select></span><span class="float"><select id="mod2"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0" selected></option></select><select id="mod3"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0" selected></option></select></span>
+			<span class="float"><select id="mod0"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0">Shield</option><option value="0">HS</option><option value="0">MH</option><option value="0" selected></option></select><select id="mod1"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0">Shield</option><option value="0">HS</option><option value="0">MH</option><option value="0" selected></option></select></span><span class="float"><select id="mod2"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0">Shield</option><option value="0">HS</option><option value="0">MH</option><option value="0" selected></option></select><select id="mod3"><option value="7">VRLA</option><option value="5">SBUL</option><option value="2">LA</option><option value="0">Shield</option><option value="0">HS</option><option value="0">MH</option><option value="0" selected></option></select></span>
 			<script>
 				var mod0 = document.getElementById("mod0");
 				var mod1 = document.getElementById("mod1");
@@ -129,14 +129,14 @@
 						case "LAx2":
 							mod0.options[2].selected = true;
 							mod1.options[2].selected = true;
-							mod2.options[3].selected = true;
-							mod3.options[3].selected = true;
+							mod2.options[6].selected = true;
+							mod3.options[6].selected = true;
 							break;
 						case "SBULx2":
 							mod0.options[1].selected = true;
 							mod1.options[1].selected = true;
-							mod2.options[3].selected = true;
-							mod3.options[3].selected = true;
+							mod2.options[6].selected = true;
+							mod3.options[6].selected = true;
 							break;
 						case "LAx4":
 							mod0.options[2].selected = true;
@@ -151,10 +151,10 @@
 							mod3.options[1].selected = true;
 							break;
 						case "Reset":
-							mod0.options[3].selected = true;
-							mod1.options[3].selected = true;
-							mod2.options[3].selected = true;
-							mod3.options[3].selected = true;
+							mod0.options[6].selected = true;
+							mod1.options[6].selected = true;
+							mod2.options[6].selected = true;
+							mod3.options[6].selected = true;
 							break;
 					}
 					calculate();

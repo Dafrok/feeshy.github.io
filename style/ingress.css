@@ -18,3 +18,4 @@ select { background-color:#0c0c0c; }
 button { background-color:#004F4A; }
 select:focus, select:hover { border-color:#EBBC4A; }
 button:focus, button:hover { background-color:#0F2225; border-color:#EBBC4A; }
+.title a, .ui a, nav a, footer a { text-decoration: none; }
