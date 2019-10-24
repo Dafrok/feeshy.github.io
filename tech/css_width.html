@@ -20,7 +20,7 @@
 	<p>这是一个介于物理长度与像素之间的概念，智能手表上 1 dp 的实际长度大约是现实中的 0.15 mm，智能手机的 1 dp 的一般在 0.15 ~ 
 	0.2 mm 之间，PC 显示器上的 1 dp 大约是 0.2 ~ 0.3 mm —— 刚好反映了逐渐增加阅读距离，界面的物理尺寸也随之增加的规律。</p>
 	<p>网页设计中的 CSS 像素 px 并没有对实际像素还是密度无关像素做出区分，不过实际上，常见的浏览器都是按照密度无关像素的方式来处理 px 的。</p>
-	<p><span lang="en-us">下表</span>整理了如今常见屏幕的CSS宽度：</p>
+	<p>下表整理了如今常见屏幕的CSS宽度：</p>
 	<table>
 		<tr>
 			<th style="width: 30%">CSS宽度</th>
@@ -32,47 +32,65 @@
 		</tr>
 		<tr>
 			<td style="width: 30%">2560</td>
-			<td style="width: 70%"><span lang="en-us">2K、5K</span>显示器</td>
+			<td style="width: 70%">桌面显示器：2K、5K(200%)</td>
+		</tr>
+		<tr>
+			<td style="width: 30%">2048</td>
+			<td style="width: 70%">非默认缩放的高分显示器：<br>
+			2K(125%)、5K(250%)</td>
 		</tr>
 		<tr>
 			<td style="width: 30%">1920</td>
-			<td style="width: 70%">主流的桌面显示器<span lang="en-us">和大屏笔记本：<br>&nbsp;FHD、2K(150%)、4K(200%)</span></td>
+			<td style="width: 70%">主流的桌面显示器和大屏笔记本：<br>
+			1920x1080、2560x1440(125%)、4K(200%)</td>
 		</tr>
 		<tr>
-			<td style="width: 30%">1440 ~ 1<span lang="en-us">6</span>00</td>
-			<td style="width: 70%">主流<span lang="en-us">高分屏笔记本电脑启用缩放：<br></span>FHD<span lang="en-us">(125%)</span>、2K
-			<span lang="en-us">(175%)</span></td>
+			<td style="width: 30%">1440~1600</td>
+			<td style="width: 70%">13.3~15.6寸的笔记本：<br>
+			1920x1080(125%)、1440x900、2880x1800(200%)、<br>3000x2000(200%)、1600x900</td>
 		</tr>
 		<tr>
-			<td style="width: 30%">1200 ~ 1368</td>
-			<td style="width: 70%">10 ~ 13 寸平板和Surface<span lang="en-us"><br>超极本以及有一些年头的老款笔记本：<br>1366x768(100%)、FHD(150%)、2K(200%)</span><br></td>
+			<td style="width: 30%">1360~1368</td>
+			<td style="width: 70%">12~13寸的平板、二合一设备，<br>以及一些有年头的瞎眼屏笔记本：<br>
+			1366x768、2736x1824(200%)、2732x2048(200%)</td>
+		</tr>
+		<tr>
+			<td style="width: 30%">1024~1280</td>
+			<td style="width: 70%">10寸左右的平板，以及古董显示器：<br>
+			1280x720、1920x1080(150%)、2560x1440(200%)<br>
+			1024x768、2048x1536(200%)</td>
 		</tr>
 		<tr>
 			<td style="width: 30%">768~800</td>
-			<td style="width: 70%">主流的 8 寸<span lang="en-us">左右的</span>平板电脑<br>如iPad Mini</td>
+			<td style="width: 70%">8寸左右的平板电脑：<br>如iPad Mini</td>
 		</tr>
 		<tr>
-			<td style="width: 30%">480</td>
-			<td style="width: 70%">5.5 ~ 6.5 寸 2K 分辨率的非全面屏手机</td>
+			<td style="width: 30%">411、414</td>
+			<td style="width: 70%">大部分6寸以上的手机（也有一部分不到6寸）<br>
+			如iPhone 11/XR、Pixel系列、Galaxy S系列</td>
 		</tr>
 		<tr>
-			<td style="width: 30%">411 ~ 414</td>
-			<td style="width: 70%">2018 年以来主流的全面屏手机<span lang="en-us">：</span><br>
-			<span lang="en-us">Pixel 1/2/3/4、IPhone XR、Galaxy S9/S10</span></td>
+			<td style="width: 30%">393</td>
+			<td style="width: 70%">小米/红米的部分1080P手机<br>也可能是411px宽的手机调整过界面缩放</td>
 		</tr>
 		<tr>
-			<td style="width: 30%">360、375</td>
-			<td style="width: 70%">4.5 ~ 5<span lang="en-us"> 寸的</span>手机<br>苹果的 5.8 寸全面屏手机</td>
+			<td style="width: 30%">375</td>
+			<td style="width: 70%">4.7寸和5.8寸iPhone</td>
+		</tr>
+		<tr>
+			<td style="width: 30%">360</td>
+			<td style="width: 70%">大部分6寸以下的720P、1080P分辨率安卓手机</td>
 		</tr>
 		<tr>
 			<td style="width: 30%">320</td>
-			<td style="width: 70%">4 <span lang="en-us">英</span>寸<span lang="en-us">的</span>苹果<span lang="en-us">手机</span></td>
+			<td style="width: 70%">4寸iPhone和iPod Touch</td>
 		</tr>
 	</table>
 	<p class="date"><br>19/6/8</p>
 	<p>参见：</p>
 	<p><a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive/?hl=zh-cn" target="_blank">响应用户界面 | Web | Google Developers</a></p>
 	<p><a href="https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html#//apple_ref/doc/uid/TP40013599-CH108-SW2" target="_blank">iOS Device Display Summary</a></p>
+	<p><a href="https://tongji.baidu.com/research/site#screen" target="_blank">百度统计流量研究院</a></p>
 	<p><a href="https://tysonmatanich.github.io/viewportSize/" target="_blank">viewportSize.js</a></p>
 	<script src="https://tysonmatanich.github.io/viewportSize/viewportSize.js"></script>
 	<script>
