@@ -3,20 +3,14 @@
 <head>
     <meta charset=utf-8 />
     <meta name="viewport" content="width=device-width, viewport-fit=cover" />
-    <title></title>
+    <title>PPI 计算器</title>
     <meta property="og:type" content="article" />
     <meta property="og:description" content="" />
     <link rel="stylesheet" href="/style/tech.css" />
-    <link rel="stylesheet" href="/style/fonts.css" />
     <style>
         body {width:20em; margin:auto;}
-        input {width:4em; margin:auto;}
-    @media (max-device-width: 480px) {
-        input, button {font-size:125%;}
-    }
-        input, button {background-color:#ffffff; border:solid 1px #888888; margin:0 0.25em; text-align:right;}
-        input:focus, select:hover {background-color:#eeeeee; border-color:#cccccc;}
-        button:focus, button:hover {background-color:#eeeeee; border-color:#000000;}
+        input {width:4em; margin:auto; background-color:#ffffff; border:solid 1px #cccccc; margin:0 0.25em; text-align:right;}
+        input:focus, input:hover {background-color:#eeeeee;}
         .title a, .ui a, nav a, footer a {text-decoration: none; }
     </style>
 </head>
@@ -25,9 +19,9 @@
     <h2>PPI 计算器</h2>
     <p>屏幕宽度：<input id="pixelW" type="number" min="0" step="1" value=""> 像素<span id="cmW"></span></p>
     <p>屏幕高度：<input id="pixelH" type="number" min="0" step="1" value=""> 像素<span id="cmH"></span></p>
-    <p>对角线长度：<input id="inch" type="number" min="0" step="0.1" value=""> 英寸<span id="cmD"></span></p>
+    <p>对角长度：<input id="inch" type="number" min="0" step="0.1" value=""> 英寸<span id="cmD"></span></p>
     <hr>
-    <p> <button onclick="calc();">PPI=</button><span id="ppi"></span></p>
+    <h2 style="text-align:center;"><a href="javascript:calc();">PPI = </a><span id="ppi"></span></h2>
 </body>
 
     
@@ -46,12 +40,12 @@
         if (inch != 0) {
             var ppi = ( pixelW ** 2 + pixelH ** 2 ) ** 0.5 / inch;
             document.getElementById("ppi").innerHTML = Math.round(ppi);
-            document.getElementById("cmW").innerHTML = "（" + Math.round(pixelW / ppi * 25.4) / 10 + "厘米）";
-            document.getElementById("cmH").innerHTML = "（" + Math.round(pixelH / ppi * 25.4) / 10  + "厘米）";
-            document.getElementById("cmD").innerHTML = "（" + Math.round(inch * 25.4) / 10 + "厘米）";
+            document.getElementById("cmW").innerHTML = "，" + Math.round(pixelW / ppi * 254) / 100 + " 厘米";
+            document.getElementById("cmH").innerHTML = "，" + Math.round(pixelH / ppi * 254) / 100  + " 厘米";
+            document.getElementById("cmD").innerHTML = "，" + Math.round(inch * 254) / 100 + " 厘米";
         }   else {
             var ppi = 0;
-            document.getElementById("ppi").innerHTML = "请输入对角线长度！";
+            document.getElementById("ppi").innerHTML = "请输入对角长度！";
         }
   }
 </script>
