@@ -18,45 +18,44 @@
         input {width:4em; margin:auto; background-color:#ffffff; border:solid 1px #cccccc; margin:0 0.25em; text-align:right;}
         input:focus, input:hover {background-color:#eeeeee;}
         .title a, .ui a, nav a, footer a {text-decoration: none; }
+        footer {font-size:smaller;}
     </style>
+    <script src="ppi_calc.js" async></script>
 </head>
-
 <body>
+    
     <h2>PPI 计算器</h2>
     <p>屏幕宽度：<input id="pixelW" type="number" min="0" step="1" value=""> 像素<span id="cmW"></span></p>
     <p>屏幕高度：<input id="pixelH" type="number" min="0" step="1" value=""> 像素<span id="cmH"></span></p>
     <p>对角长度：<input id="inch" type="number" min="0" step="0.1" value=""> 英寸<span id="cmD"></span></p>
     <hr>
-    <h2 style="text-align:center;"><a href="javascript:calc();">PPI = </a><span id="ppi"></span></h2>
-    <br><br><br><br><br><br>
-    <footer style="">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></footer>
+    <div style="text-align:center;">
+        <h3><a href="javascript:calc();">↓ PPI ↓</a></h3>
+        <p><b id="unknown" style="visibility:hidden;">请输入对角长度！</b></p>
+    </div>
+    <div id="recommend" style="visibility:hidden;">
+        <p>物理分辨率<span id="res">________</span>，PPI为<span id="ppi">____</span>的屏幕，建议缩放设置如下：</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>更大字体</th>
+                <th>更多内容</th>
+            </tr>
+            <tr>
+                <td>缩放比例</td>
+                <td id="scaleFacLgr"></td>
+                <td id="scaleFacMore"></td>
+            </tr>
+                <tr>
+                <td>逻辑分辨率</td>
+                <td id="resLgr"></td>
+                <td id="resMore"></td>
+            </tr>
+        </table>
+        <p id="thisDevice" style="visibility:inherit;">（当前屏幕的逻辑分辨率：<span id="cssRes"></span>）</p>
+    </div>
+    <p><br id="blank" hidden></p>
+    <footer>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></footer>
 </body>
-
-    
-<script>
-    window.onload = onload() ;
-    function onload(){
-        document.getElementById("pixelW").value = Math.round ( window.screen.width * window.devicePixelRatio )
-        document.getElementById("pixelH").value = Math.round ( window.screen.height * window.devicePixelRatio )
-/*        document.getElementById("inch").value = 
-        calc()
-*/    }
-    function calc(){
-        var pixelW = document.getElementById("pixelW").value;
-        var pixelH = document.getElementById("pixelH").value;
-        var inch = document.getElementById("inch").value;
-        if (inch != 0) {
-            var ppi = ( pixelW ** 2 + pixelH ** 2 ) ** 0.5 / inch;
-            document.getElementById("ppi").innerHTML = Math.round(ppi);
-            document.getElementById("cmW").innerHTML = "，" + Math.round(pixelW / ppi * 254) / 100 + " 厘米";
-            document.getElementById("cmH").innerHTML = "，" + Math.round(pixelH / ppi * 254) / 100  + " 厘米";
-            document.getElementById("cmD").innerHTML = "，" + Math.round(inch * 254) / 100 + " 厘米";
-        }   else {
-            var ppi = 0;
-            document.getElementById("ppi").innerHTML = "请输入对角长度！";
-        }
-  }
-</script>
-
 </html>
 
