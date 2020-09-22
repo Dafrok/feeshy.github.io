@@ -1,0 +1,38 @@
+归档，<a href="https://meta.appinn.net/t/topic/15821">前往讨论</a>
+
+<div class='post' itemprop='articleBody'>
+          <p>昨天在自己VPS部署了个Aria2，秒下宽带运营商连接不上的文件的感觉真爽。</p>
+<p>不过SFTP取回本地的速率只有几到几十kb/s。因此跟用同一台VPS给本地下载工具挂代理相比，总耗时其实是更久的。。。</p>
+<p>一开始打算搞个简单的http server喂给多线程下载工具，不过http如果想隔离公网，要么搞一套认证系统，要么手动启停http服务……下载完还要用sftp来删除，使用起来挺麻烦的……</p>
+<p>后来找到这个Resilio Sync。它是一个P2P同步工具，提供了包括Linux的全平台客户端。“同步”正是离线下载所需要的概念——</p>
+<p>只需设定VPS Aria2下载文件夹与本地的PC、手机同步即可自动取回VPS离线下载的文件。我们只需在本地删除下载的文件，或将其移动到其他本地文件夹，该文件也会同步从VPS删除。无论是配置还是使用起来，都比通过下载工具取回要方便很多。</p>
+<hr>
+<p>VPS系统：Ubuntu 18.04 LTS</p>
+<ol>
+<li><p>配置Web运行环境</p></li>
+<ol>
+<li><p>安装Nginx</p></li>
+<p>过程参考<a>这篇文章</a>，作为一个小白，我当然选择直接从软件仓库安装：</p>
+<pre><code>apt-get update
+apt-get install nginx
+systemctl enable nginx</code></pre>
+<p>安装完通过HTTP访问VPS，确定出现了Nginx的默认页面</p>
+<li><p>部署HTTPS证书（如果你有域名）</p></li>
+<p>过程参考<a href="https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx.html">这里</a></p>
+</ol>
+<li><p>安装Aria2</p></li>
+<p>过程参考<a href="https://www.timelate.com/archives/install-aria2-and-ariang-on-ubuntu.html">这篇文章</a>。后半篇装的图形界面是可选的，我并不需要通过网页添加任务的功能，所以并没有在VPS安装AriaNg。</p>
+<ol>
+<li><p>PC使用<a href="https://chrome.google.com/webstore/detail/aria2-for-chrome/mpkodccbngfoacfalldjimigbofkhgjn">这个Chrome扩展</a>添加任务，或者如果你想同时有远程下载与本地下载的话，也可以使用<a>这个客户端</a></p></li>
+<li><p>iOS使用<a href="https://sharecuts.cn/shortcut/162">这个捷径</a>添加任务。</p></li>
+<li><p>安卓使用<a href="https://github.com/Xmader/aria-ng-gui-android">这个App</a></p></li>
+</ol>
+<p>配置这些图形界面，需要填写服务器地址，上一步设定的Aria2端口和密码，并指定在服务器的下载位置</p>
+<li><p>安装和配置Resilio Sync</p></li>
+<ol>
+<li><p>安装过程参考<a href="https://blog.heguangyu.net/ubuntu%E5%AE%89%E8%A3%85resilio-sync-btsync/">这篇文章</a>。</p></li>
+<li><p>安装完成后通过浏览器访问VPS地址，进入Resilio Sync的Web管理界面。将Aria2下载文件夹添加为一个Resilio的标准文件夹，并关掉“存储已删除的文件”和“Tracker服务器”功能。 </p></li>
+<li><p>最后复制读写权限的密钥，将该文件夹添加到本地的电脑、手机的Sync客户端，注意由于我们关掉了Tracker功能，所以本地端需要手动填写“预定义的服务器”才能使用。</p></li>
+</ol>
+</ol>
+        </div>
