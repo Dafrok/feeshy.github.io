@@ -4,6 +4,9 @@
 :root {
 	line-height: calc(1.2em + 1.5vh);
 }
+pre {
+    line-height: 1em;
+}
 body {
 	margin: 5vh auto;
 	width: 35rem;
