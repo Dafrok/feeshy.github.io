@@ -4,9 +4,6 @@
 :root {
 	line-height: calc(1.2em + 1.5vh);
 }
-pre {
-    line-height: 1em;
-}
 body {
 	margin: 5vh auto;
 	width: 35rem;
@@ -19,8 +16,11 @@ body>div.title,div.text,div.text-center {
 	body>:not(nav) { transform: translateY(calc(100vh / 3.75 - 112px)); }
 	body>div.title, body>div.text, body>div.text-center { min-height: calc(87.5vh - 100vh / 3.75 + 112px - 1.2rem - 1.5vh); }
 }
-.text, pre code {
+.text, pre {
 	text-align: justify;
+}
+pre {
+    line-height: 1em;
 }
 .title, h1, h2, .text-center, footer {
 	text-align: center;
