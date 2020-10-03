@@ -15,14 +15,19 @@ function calc() {
 
     if (inchD != 0) {
         
-        var ppi, mmW, mmH
+        var ppi, mmW, mmH, equivPPI
         ppi = Math.sqrt(Math.pow(pixelW, 2) + Math.pow(pixelH, 2)) / inchD
         mmW = pixelW / ppi * 25.4
         mmH = pixelH / ppi * 25.4
+        if (document.getElementById("isPenTile").checked == false) {
+            equivPPI = ppi
+        }   else {
+            equivPPI = ppi * Math.sqrt(2/3)
+        }
         document.getElementById("cmW").innerHTML = "（" + Math.round(mmW) / 10 + " 厘米）"
         document.getElementById("cmH").innerHTML = "（" + Math.round(mmH) / 10  + " 厘米）"
         document.getElementById("cmD").innerHTML = "（" + Math.round(inchD * 25.4) / 10 + " 厘米）"
-        document.getElementById("result").innerHTML = ">  <b>" + Math.round(ppi) + "</b>  <"
+        document.getElementById("result").innerHTML = ">  <b>" + Math.round(equivPPI) + "</b>  <"
         
         var mmShorter, scaleFacLgr, scaleFacMore, meterRetina, meterImmerse, meterMax
         if (parseFloat(mmW) <= parseFloat(mmH)) {
